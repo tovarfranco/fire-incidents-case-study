@@ -91,7 +91,45 @@ You should branch from **dev**, and your branch name should follow this rule **<
 
 # Get Started
 
+1. Create Virtualenv
+   ```bash
+   python virtualenv venv1
+   ```
+   > Note: if not installed, pip install virtualenv
+2. Activate the virtualenv and install requirements.txt in it
+   ```bash
+   source venv1/bin/activate
+   pip install requirements.txt 
+   ```
+   > Note: You will be placed in branch Main. You should start from Dev
+3. Go to dev:
+   ```bash
+   git checkout dev
+   ```
+   > Note: You will be placed in branch Dev, where you'll start from.
+4. For a new feature/bug/fix/refactor, you'll create a branch:
+   ```bash
+   git checkout -b <type>/<branch_name>
+   ```
+   > Note: Replace <type> and <branch_name> for your actual information. i.e: feat/frontend
+5. Work on your changes.
+6. Add your changes:
+   ```bash
+   git add --all
+   ```
+7. Commit your changes:
+   ```bash
+   git commit -m <type:message>
+   ```
+   > Note: Replace <type:message> to describe your changes. i.e: feat: New readme added.
+8. Push your changes:
+   ```bash
+   git push
+   ```
+   > Note: You will may be required to set upstream. i.e: git push --set-upstream origin feat/fronted
 
+9. After you finish your feature you must submit a merge request pointing to **dev** branch:
+   > Note: You will specify the reviewers that will approve this merge.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
