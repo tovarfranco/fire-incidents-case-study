@@ -212,25 +212,30 @@ This folder will have the refined data in parquet
 
 # Spark History Logs
 
-1) Download the image
+1. Download the image
+   ```bash
+   docker build -t glue/sparkui:latest
+   ```
 
-docker build -t glue/sparkui:latest . 
+2. Export Credentials
+   ```bash
+   export AWS_ACCESS_KEY_ID="???"
+   export AWS_SECRET_ACCESS_KEY="???"
+   export AWS_SESSION_TOKEN="???"
+   ```
 
-2) Export Credentials
 
-export AWS_ACCESS_KEY_ID="???"
-export AWS_SECRET_ACCESS_KEY="???"
-export AWS_SESSION_TOKEN="???"
+3. Run the spark host 
+   ```bash
+   docker run -it -e SPARK_HISTORY_OPTS="$SPARK_HISTORY_OPTS \
+   -Dspark.history.fs.logDirectory=s3a://fire-incidents-config-dev/logs/spark \
+   -Dspark.hadoop.fs.s3a.access.key=$AWS_ACCESS_KEY_ID
+   -Dspark.hadoop.fs.s3a.secret.key=$AWS_SECRET_ACCESS_KEY \
+   -Dspark.hadoop.fs.s3a.session.token=$AWS_SESSION_TOKEN \
+   -Dspark.hadoop.fs.s3a.aws.credentials.provider=org.apache.hadoop.fs.s3a.TemporaryAWSCredentialsProvider" \
+   -p 18080:18080 --name glue_sparkUI glue/sparkui:latest "/opt/spark/bin/spark-class org.apache.spark.deploy.history.HistoryServer"
+   ```
 
-3) Run the spark host 
-
-docker run -it -e SPARK_HISTORY_OPTS="$SPARK_HISTORY_OPTS \
--Dspark.history.fs.logDirectory=s3a://fire-incidents-config-dev/logs/spark \
--Dspark.hadoop.fs.s3a.access.key=$AWS_ACCESS_KEY_ID
--Dspark.hadoop.fs.s3a.secret.key=$AWS_SECRET_ACCESS_KEY \
--Dspark.hadoop.fs.s3a.session.token=$AWS_SESSION_TOKEN \
--Dspark.hadoop.fs.s3a.aws.credentials.provider=org.apache.hadoop.fs.s3a.TemporaryAWSCredentialsProvider" \
--p 18080:18080 --name glue_sparkUI glue/sparkui:latest "/opt/spark/bin/spark-class org.apache.spark.deploy.history.HistoryServer"
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
