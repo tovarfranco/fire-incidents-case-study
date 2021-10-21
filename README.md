@@ -28,6 +28,13 @@ There are differents stages in the datalake: <br>
 </ul>
 
 
+The raw data will be uploaded to the raw bucket named: fire-incidents-raw-dev.
+A glue job, named fire-incidents-raw-refined-dev will read the .csv using PySpark, and write it partitioned by year,month,day in the bucket named 	fire-incidents-refined-dev with parquet format.
+The data in raw and refined stages, will be crawled and available in Athena, where Data Quality proccesses will be able to analyze and compare the data, in order not to miss records during the process.
+Once in refined, the data will be loaded to Redshift, using a "prev" schema, where the tables: fire_incidents, district and battalion will be written. 
+The prev tables are temporal tables, which will be truncated and written to the schema stg using upserts/merge methods. The tables in "stg" will be updated daily.
+
+
 # Fire Incidents Library
 
 This library contains all the common code used by the Fire Incidents team.
