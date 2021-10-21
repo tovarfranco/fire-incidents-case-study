@@ -143,6 +143,17 @@ Steps:
    ```
    > Note: You will need SAM cli. 
 6. Your AWS resources will be deployed in your account
+7. The Role deployed needs to be attached to the Redshift Cluster
+   > Note: A Redshift Cluster is required
+8. The Job will be configure via .yamls located in src/config. All of them should uploaded to s3.
+   > Note: s3://fire-incidents-config-dev/config/
+7. To delete the stack:
+   ```bash
+   ./stop.sh
+   ```
+
+# Neccesary Buckets
+
 
 
 ## License
