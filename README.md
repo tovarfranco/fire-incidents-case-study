@@ -128,23 +128,8 @@ Steps:
    ./start.sh
    ```
    > Note: You will need SAM cli. 
-6. Add your changes:
-   ```bash
-   git add --all
-   ```
-7. Commit your changes:
-   ```bash
-   git commit -m <type:message>
-   ```
-   > Note: Replace <type:message> to describe your changes. i.e: feat: New readme added.
-8. Push your changes:
-   ```bash
-   git push
-   ```
-   > Note: You will may be required to set upstream. i.e: git push --set-upstream origin feat/fronted
+6. Your AWS resources will be deployed in your account
 
-9. After you finish your feature you must submit a merge request pointing to **dev** branch:
-   > Note: You will specify the reviewers that will approve this merge.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
