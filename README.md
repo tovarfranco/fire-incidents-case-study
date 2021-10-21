@@ -91,9 +91,19 @@ You should branch from **dev**, and your branch name should follow this rule **<
 
 # Get Started
 
+Requirements:
+
+<ul>
+   <li> Amazon Account
+   <li> AWS CLI
+   <li> SAM CLI
+</ul>
+
+Steps:
+
 1. Create Virtualenv
    ```bash
-   python virtualenv venv1
+   virtualenv venv1
    ```
    > Note: if not installed, pip install virtualenv
 2. Activate the virtualenv and install requirements.txt in it
@@ -101,12 +111,12 @@ You should branch from **dev**, and your branch name should follow this rule **<
    source venv1/bin/activate
    pip install requirements.txt 
    ```
-   > Note: You will be placed in branch Main. You should start from Dev
-3. Go to dev:
+   > Note: requirements will have the neccesaries libraries for the env.
+3. Configure AWS and provide the keys.
    ```bash
-   git checkout dev
+   aws configure
    ```
-   > Note: You will be placed in branch Dev, where you'll start from.
+   > Note: You will need to install AWS CLI before.
 4. For a new feature/bug/fix/refactor, you'll create a branch:
    ```bash
    git checkout -b <type>/<branch_name>
