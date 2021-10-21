@@ -39,9 +39,12 @@ The prev tables are temporal tables, which will be truncated and written to the 
 Once in "stg", another glue job will create the dimensions and the fact table in "dwh". Setting the transformation outside Redshift (using Glue) will help us not to overload the datawarehouse, and avoid us of using stored procedures. 
 This Glue Job, will create the dimensions: dim_district, dim_battalion, copying the tables from "stg" to "dwh" and adding them the SK (autoincremental), which are from the datawarehouse. 
 Once the dims are created in "dwh", the job will create a fact table named: fact_fire_incidents, consuming fire_incidents from "stg" and joining it to the dimension to obtain the sk_district, and sk_battalion.<br>
+<br>The dimension dim_date, will be a once time triggered process that will load like a calendar table in the "dwh" schema. It is prepared to run only one time, with the necesary sequence of the dates.
+<br>
 Once finished the proccess, the data will be available in "dwh" to be consumed. 
 <br>The whole proccess could be orchestrated via Step Functions. <br>
 All the resources will be deployed via SAM Cli and Cloud Formation, using a template.yaml file, where the resources are defined. (Role,Policy,GlueJobs,StepFunction,Databases,Crawlers)
+
 
 
 # Fire Incidents Library

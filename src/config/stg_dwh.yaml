@@ -19,15 +19,22 @@ fact:
       view: dim_battalion
     - name: dwh.dim_district
       view: dim_district
+    - name: dwh.dim_date
+      view: dim_date
     - name: stg.fire_incidents
       view: fire_incidents
   query: >
-    SELECT fire.*,bat.sk_battalion, dis.sk_district
+    SELECT fire.*,bat.sk_battalion, dis.sk_district, date.sk_date
     FROM fire_incidents fire
     LEFT JOIN dim_battalion bat
       ON fire.id_battalion = bat.id_battalion
     LEFT JOIN dim_district dis
       ON fire.id_district = dis.id_district
+    LEFT JOIN dim_date date
+      ON fire.incident_date = date.date
   target: dwh.fact_fire_incidents
   include_cols:
   exclude_cols: ['id_battalion','id_district']
+
+
+dim_date: dwh.dim_date
