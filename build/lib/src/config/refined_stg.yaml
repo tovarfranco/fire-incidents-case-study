@@ -1,0 +1,33 @@
+source: parquet
+
+parquet:
+  path: s3://fire-incidents-refined-dev/fire_incidents
+
+redshift:
+  database: dev
+  schema_prev: prev
+  schema: stg
+  role: arn:aws:iam::104674085951:role/fire-incidents-role-dev
+
+tables:
+  - name: fire_incidents
+    include_cols: 
+    exclude_cols: ['battalion','station_area','neighborhood_district', 'city', 'zipcode']
+    md5: 
+      - cols: ['battalion','station_area']
+        name: id_battalion
+      - cols: ['neighborhood_district', 'city', 'zipcode']
+        name: id_district
+    pk: id
+  - name: battalion
+    include_cols: ['id_battalion','battalion','station_area']
+    exclude_cols:
+    md5: 
+    pk: id_battalion
+  - name: district
+    include_cols: ['id_district','neighborhood_district', 'city', 'zipcode']
+    exclude_cols:
+    md5: 
+    pk: id_district
+
+
