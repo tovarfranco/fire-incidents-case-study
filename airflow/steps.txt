@@ -1,0 +1,14 @@
+1. Go to Airflow Folder
+cd airflow
+
+2. Update the stepfunction arn and the glue job names en each DAG.
+
+3. Create the services
+docker-compose up
+
+4. Access to Airflow console. In the "Admin" section in "Connections", create a connection to aws:
+    login: access_key
+    password: secret_access_key
+    {"region_name": "us-west-2", "aws_session_token": "??"}
+    
+5. You will see both Dags live, and able to be triggered. 

@@ -1,0 +1,873 @@
+[2021-10-21 18:17:37,037] {scheduler_job.py:182} INFO - Started process (PID=32) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:17:37,039] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:17:37,040] {logging_mixin.py:104} INFO - [2021-10-21 18:17:37,039] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:17:37,767] {logging_mixin.py:104} INFO - [2021-10-21 18:17:37,765] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:17:37,768] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:17:37,802] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.783 seconds
+[2021-10-21 18:18:07,902] {scheduler_job.py:182} INFO - Started process (PID=35) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:18:07,903] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:18:07,904] {logging_mixin.py:104} INFO - [2021-10-21 18:18:07,904] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:18:08,012] {logging_mixin.py:104} INFO - [2021-10-21 18:18:08,011] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:18:08,012] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:18:08,019] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.119 seconds
+[2021-10-21 18:18:38,119] {scheduler_job.py:182} INFO - Started process (PID=38) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:18:38,120] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:18:38,121] {logging_mixin.py:104} INFO - [2021-10-21 18:18:38,120] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:18:38,245] {logging_mixin.py:104} INFO - [2021-10-21 18:18:38,244] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:18:38,246] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:18:38,254] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.138 seconds
+[2021-10-21 18:19:08,352] {scheduler_job.py:182} INFO - Started process (PID=41) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:19:08,353] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:19:08,354] {logging_mixin.py:104} INFO - [2021-10-21 18:19:08,354] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:19:08,479] {logging_mixin.py:104} INFO - [2021-10-21 18:19:08,478] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:19:08,479] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:19:08,485] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.136 seconds
+[2021-10-21 18:19:38,584] {scheduler_job.py:182} INFO - Started process (PID=44) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:19:38,585] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:19:38,588] {logging_mixin.py:104} INFO - [2021-10-21 18:19:38,587] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:19:38,702] {logging_mixin.py:104} INFO - [2021-10-21 18:19:38,702] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:19:38,703] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:19:38,709] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.128 seconds
+[2021-10-21 18:20:08,809] {scheduler_job.py:182} INFO - Started process (PID=47) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:20:08,811] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:20:08,812] {logging_mixin.py:104} INFO - [2021-10-21 18:20:08,812] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:20:08,939] {logging_mixin.py:104} INFO - [2021-10-21 18:20:08,937] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:20:08,939] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:20:08,947] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.140 seconds
+[2021-10-21 18:20:39,056] {scheduler_job.py:182} INFO - Started process (PID=50) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:20:39,057] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:20:39,058] {logging_mixin.py:104} INFO - [2021-10-21 18:20:39,058] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:20:39,172] {logging_mixin.py:104} INFO - [2021-10-21 18:20:39,171] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:20:39,172] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:20:39,183] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.129 seconds
+[2021-10-21 18:21:09,293] {scheduler_job.py:182} INFO - Started process (PID=53) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:21:09,294] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:21:09,294] {logging_mixin.py:104} INFO - [2021-10-21 18:21:09,294] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:21:09,424] {logging_mixin.py:104} INFO - [2021-10-21 18:21:09,422] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:21:09,424] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:21:09,432] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.141 seconds
+[2021-10-21 18:21:39,540] {scheduler_job.py:182} INFO - Started process (PID=56) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:21:39,541] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:21:39,541] {logging_mixin.py:104} INFO - [2021-10-21 18:21:39,541] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:21:39,641] {logging_mixin.py:104} INFO - [2021-10-21 18:21:39,640] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:21:39,642] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:21:39,647] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.109 seconds
+[2021-10-21 18:22:09,751] {scheduler_job.py:182} INFO - Started process (PID=59) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:22:09,752] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:22:09,753] {logging_mixin.py:104} INFO - [2021-10-21 18:22:09,753] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:22:09,852] {logging_mixin.py:104} INFO - [2021-10-21 18:22:09,851] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:22:09,852] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:22:09,858] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.111 seconds
+[2021-10-21 18:22:39,985] {scheduler_job.py:182} INFO - Started process (PID=62) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:22:39,986] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:22:39,986] {logging_mixin.py:104} INFO - [2021-10-21 18:22:39,986] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:22:40,082] {logging_mixin.py:104} INFO - [2021-10-21 18:22:40,081] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:22:40,082] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:22:40,087] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.105 seconds
+[2021-10-21 18:23:10,184] {scheduler_job.py:182} INFO - Started process (PID=65) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:23:10,185] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:23:10,186] {logging_mixin.py:104} INFO - [2021-10-21 18:23:10,186] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:23:10,291] {logging_mixin.py:104} INFO - [2021-10-21 18:23:10,290] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:23:10,292] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:23:10,298] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.118 seconds
+[2021-10-21 18:23:40,332] {scheduler_job.py:182} INFO - Started process (PID=68) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:23:40,333] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:23:40,334] {logging_mixin.py:104} INFO - [2021-10-21 18:23:40,334] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:23:40,428] {logging_mixin.py:104} INFO - [2021-10-21 18:23:40,427] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:23:40,429] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:23:40,433] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.104 seconds
+[2021-10-21 18:24:10,503] {scheduler_job.py:182} INFO - Started process (PID=71) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:24:10,505] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:24:10,506] {logging_mixin.py:104} INFO - [2021-10-21 18:24:10,506] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:24:10,672] {logging_mixin.py:104} INFO - [2021-10-21 18:24:10,671] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:24:10,672] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:24:10,680] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.183 seconds
+[2021-10-21 18:24:40,707] {scheduler_job.py:182} INFO - Started process (PID=75) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:24:40,709] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:24:40,709] {logging_mixin.py:104} INFO - [2021-10-21 18:24:40,709] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:24:40,819] {logging_mixin.py:104} INFO - [2021-10-21 18:24:40,818] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:24:40,819] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:24:40,826] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.121 seconds
+[2021-10-21 18:25:11,832] {scheduler_job.py:182} INFO - Started process (PID=78) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:25:11,833] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:25:11,835] {logging_mixin.py:104} INFO - [2021-10-21 18:25:11,834] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:25:11,924] {logging_mixin.py:104} INFO - [2021-10-21 18:25:11,923] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:25:11,924] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:25:11,932] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.105 seconds
+[2021-10-21 18:25:41,962] {scheduler_job.py:182} INFO - Started process (PID=81) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:25:41,964] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:25:41,965] {logging_mixin.py:104} INFO - [2021-10-21 18:25:41,965] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:25:42,050] {logging_mixin.py:104} INFO - [2021-10-21 18:25:42,049] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:25:42,050] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:25:42,054] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.097 seconds
+[2021-10-21 18:26:12,089] {scheduler_job.py:182} INFO - Started process (PID=84) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:26:12,091] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:26:12,092] {logging_mixin.py:104} INFO - [2021-10-21 18:26:12,092] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:26:12,190] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Pipeline_Spark']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:26:12,205] {logging_mixin.py:104} INFO - [2021-10-21 18:26:12,205] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:26:12,215] {logging_mixin.py:104} INFO - [2021-10-21 18:26:12,214] {dag.py:1843} INFO - Creating ORM DAG for Pipeline_Spark
+[2021-10-21 18:26:12,220] {logging_mixin.py:104} INFO - [2021-10-21 18:26:12,220] {dag.py:2280} INFO - Setting next_dagrun for Pipeline_Spark to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:26:12,233] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.149 seconds
+[2021-10-21 18:26:43,216] {scheduler_job.py:182} INFO - Started process (PID=87) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:26:43,217] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:26:43,218] {logging_mixin.py:104} INFO - [2021-10-21 18:26:43,218] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:26:43,311] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Pipeline_Spark']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:26:43,319] {logging_mixin.py:104} INFO - [2021-10-21 18:26:43,319] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:26:43,332] {logging_mixin.py:104} INFO - [2021-10-21 18:26:43,332] {dag.py:2280} INFO - Setting next_dagrun for Pipeline_Spark to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:26:43,341] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.129 seconds
+[2021-10-21 18:27:14,338] {scheduler_job.py:182} INFO - Started process (PID=90) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:27:14,339] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:27:14,340] {logging_mixin.py:104} INFO - [2021-10-21 18:27:14,340] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:27:14,469] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:27:14,479] {logging_mixin.py:104} INFO - [2021-10-21 18:27:14,479] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:27:14,486] {logging_mixin.py:104} INFO - [2021-10-21 18:27:14,486] {dag.py:1843} INFO - Creating ORM DAG for Fire_Incidents
+[2021-10-21 18:27:14,491] {logging_mixin.py:104} INFO - [2021-10-21 18:27:14,491] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:27:14,502] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.167 seconds
+[2021-10-21 18:27:45,493] {scheduler_job.py:182} INFO - Started process (PID=93) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:27:45,494] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:27:45,495] {logging_mixin.py:104} INFO - [2021-10-21 18:27:45,495] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:27:45,598] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:27:45,607] {logging_mixin.py:104} INFO - [2021-10-21 18:27:45,607] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:27:45,618] {logging_mixin.py:104} INFO - [2021-10-21 18:27:45,618] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:27:45,628] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.138 seconds
+[2021-10-21 18:28:16,619] {scheduler_job.py:182} INFO - Started process (PID=96) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:28:16,620] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:28:16,620] {logging_mixin.py:104} INFO - [2021-10-21 18:28:16,620] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:28:16,711] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:28:16,719] {logging_mixin.py:104} INFO - [2021-10-21 18:28:16,719] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:28:16,730] {logging_mixin.py:104} INFO - [2021-10-21 18:28:16,730] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:28:16,738] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.121 seconds
+[2021-10-21 18:28:47,746] {scheduler_job.py:182} INFO - Started process (PID=99) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:28:47,748] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:28:47,750] {logging_mixin.py:104} INFO - [2021-10-21 18:28:47,749] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:28:47,839] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:28:47,847] {logging_mixin.py:104} INFO - [2021-10-21 18:28:47,847] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:28:47,858] {logging_mixin.py:104} INFO - [2021-10-21 18:28:47,858] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:28:47,865] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.123 seconds
+[2021-10-21 18:29:18,859] {scheduler_job.py:182} INFO - Started process (PID=102) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:29:18,861] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:29:18,862] {logging_mixin.py:104} INFO - [2021-10-21 18:29:18,862] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:29:18,950] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:29:18,958] {logging_mixin.py:104} INFO - [2021-10-21 18:29:18,958] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:29:18,969] {logging_mixin.py:104} INFO - [2021-10-21 18:29:18,969] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:29:18,977] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.121 seconds
+[2021-10-21 18:29:49,975] {scheduler_job.py:182} INFO - Started process (PID=105) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:29:49,976] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:29:49,976] {logging_mixin.py:104} INFO - [2021-10-21 18:29:49,976] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:29:50,067] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:29:50,076] {logging_mixin.py:104} INFO - [2021-10-21 18:29:50,076] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:29:50,087] {logging_mixin.py:104} INFO - [2021-10-21 18:29:50,086] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:29:50,094] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.121 seconds
+[2021-10-21 18:30:21,093] {scheduler_job.py:182} INFO - Started process (PID=108) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:30:21,094] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:30:21,095] {logging_mixin.py:104} INFO - [2021-10-21 18:30:21,094] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:30:21,216] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:30:21,227] {logging_mixin.py:104} INFO - [2021-10-21 18:30:21,227] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:30:21,241] {logging_mixin.py:104} INFO - [2021-10-21 18:30:21,241] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:30:21,254] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.163 seconds
+[2021-10-21 18:30:52,238] {scheduler_job.py:182} INFO - Started process (PID=111) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:30:52,239] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:30:52,239] {logging_mixin.py:104} INFO - [2021-10-21 18:30:52,239] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:30:52,333] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:30:52,343] {logging_mixin.py:104} INFO - [2021-10-21 18:30:52,343] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:30:52,355] {logging_mixin.py:104} INFO - [2021-10-21 18:30:52,355] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:30:52,366] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.130 seconds
+[2021-10-21 18:31:23,370] {scheduler_job.py:182} INFO - Started process (PID=114) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:31:23,371] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:31:23,371] {logging_mixin.py:104} INFO - [2021-10-21 18:31:23,371] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:31:23,485] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:31:23,495] {logging_mixin.py:104} INFO - [2021-10-21 18:31:23,495] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:31:23,506] {logging_mixin.py:104} INFO - [2021-10-21 18:31:23,506] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:31:23,516] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.149 seconds
+[2021-10-21 18:31:54,499] {scheduler_job.py:182} INFO - Started process (PID=117) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:31:54,500] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:31:54,501] {logging_mixin.py:104} INFO - [2021-10-21 18:31:54,500] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:31:54,598] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:31:54,607] {logging_mixin.py:104} INFO - [2021-10-21 18:31:54,607] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:31:54,622] {logging_mixin.py:104} INFO - [2021-10-21 18:31:54,622] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:31:54,634] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.137 seconds
+[2021-10-21 18:32:25,627] {scheduler_job.py:182} INFO - Started process (PID=120) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:32:25,628] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:32:25,629] {logging_mixin.py:104} INFO - [2021-10-21 18:32:25,629] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:32:25,756] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:32:25,766] {logging_mixin.py:104} INFO - [2021-10-21 18:32:25,766] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:32:25,779] {logging_mixin.py:104} INFO - [2021-10-21 18:32:25,779] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:32:25,787] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.162 seconds
+[2021-10-21 18:32:56,758] {scheduler_job.py:182} INFO - Started process (PID=123) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:32:56,759] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:32:56,760] {logging_mixin.py:104} INFO - [2021-10-21 18:32:56,760] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:32:56,872] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:32:56,882] {logging_mixin.py:104} INFO - [2021-10-21 18:32:56,882] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:32:56,894] {logging_mixin.py:104} INFO - [2021-10-21 18:32:56,894] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:32:56,902] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.147 seconds
+[2021-10-21 18:33:27,882] {scheduler_job.py:182} INFO - Started process (PID=126) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:33:27,884] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:33:27,884] {logging_mixin.py:104} INFO - [2021-10-21 18:33:27,884] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:33:28,021] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:33:28,032] {logging_mixin.py:104} INFO - [2021-10-21 18:33:28,032] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:33:28,048] {logging_mixin.py:104} INFO - [2021-10-21 18:33:28,048] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:33:28,060] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.182 seconds
+[2021-10-21 18:33:59,014] {scheduler_job.py:182} INFO - Started process (PID=129) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:33:59,015] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:33:59,016] {logging_mixin.py:104} INFO - [2021-10-21 18:33:59,016] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:33:59,124] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:33:59,134] {logging_mixin.py:104} INFO - [2021-10-21 18:33:59,134] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:33:59,146] {logging_mixin.py:104} INFO - [2021-10-21 18:33:59,146] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:33:59,155] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.144 seconds
+[2021-10-21 18:34:30,139] {scheduler_job.py:182} INFO - Started process (PID=132) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:34:30,140] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:34:30,141] {logging_mixin.py:104} INFO - [2021-10-21 18:34:30,141] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:34:30,224] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:34:30,231] {logging_mixin.py:104} INFO - [2021-10-21 18:34:30,231] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:34:30,242] {logging_mixin.py:104} INFO - [2021-10-21 18:34:30,242] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:34:30,252] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.115 seconds
+[2021-10-21 18:35:01,262] {scheduler_job.py:182} INFO - Started process (PID=135) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:35:01,264] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:35:01,265] {logging_mixin.py:104} INFO - [2021-10-21 18:35:01,264] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:35:01,378] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:35:01,389] {logging_mixin.py:104} INFO - [2021-10-21 18:35:01,389] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:35:01,404] {logging_mixin.py:104} INFO - [2021-10-21 18:35:01,404] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:35:01,414] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.154 seconds
+[2021-10-21 18:35:32,387] {scheduler_job.py:182} INFO - Started process (PID=138) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:35:32,389] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:35:32,390] {logging_mixin.py:104} INFO - [2021-10-21 18:35:32,390] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:35:32,493] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:35:32,503] {logging_mixin.py:104} INFO - [2021-10-21 18:35:32,503] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:35:32,523] {logging_mixin.py:104} INFO - [2021-10-21 18:35:32,522] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:35:32,533] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.150 seconds
+[2021-10-21 18:36:03,521] {scheduler_job.py:182} INFO - Started process (PID=141) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:36:03,521] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:36:03,522] {logging_mixin.py:104} INFO - [2021-10-21 18:36:03,522] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:36:03,611] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:36:03,620] {logging_mixin.py:104} INFO - [2021-10-21 18:36:03,620] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:36:03,634] {logging_mixin.py:104} INFO - [2021-10-21 18:36:03,634] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:36:03,647] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.128 seconds
+[2021-10-21 18:36:34,640] {scheduler_job.py:182} INFO - Started process (PID=144) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:36:34,646] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:36:34,647] {logging_mixin.py:104} INFO - [2021-10-21 18:36:34,647] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:36:34,648] {logging_mixin.py:104} INFO - [2021-10-21 18:36:34,648] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 46
+    refined_stg =
+                 ^
+SyntaxError: invalid syntax
+[2021-10-21 18:36:34,649] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:36:34,662] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.024 seconds
+[2021-10-21 18:37:04,772] {scheduler_job.py:182} INFO - Started process (PID=147) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:37:04,773] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:37:04,774] {logging_mixin.py:104} INFO - [2021-10-21 18:37:04,774] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:37:04,775] {logging_mixin.py:104} INFO - [2021-10-21 18:37:04,775] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 46
+    refined_stg =
+                 ^
+SyntaxError: invalid syntax
+[2021-10-21 18:37:04,776] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:37:04,791] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.021 seconds
+[2021-10-21 18:37:34,902] {scheduler_job.py:182} INFO - Started process (PID=150) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:37:34,904] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:37:34,905] {logging_mixin.py:104} INFO - [2021-10-21 18:37:34,905] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:37:34,908] {logging_mixin.py:104} INFO - [2021-10-21 18:37:34,907] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 46
+    refined_stg =
+                 ^
+SyntaxError: invalid syntax
+[2021-10-21 18:37:34,908] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:37:34,925] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.027 seconds
+[2021-10-21 18:38:05,034] {scheduler_job.py:182} INFO - Started process (PID=153) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:38:05,035] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:38:05,035] {logging_mixin.py:104} INFO - [2021-10-21 18:38:05,035] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:38:05,036] {logging_mixin.py:104} INFO - [2021-10-21 18:38:05,036] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 46
+    refined_stg =
+                 ^
+SyntaxError: invalid syntax
+[2021-10-21 18:38:05,037] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:38:05,049] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.018 seconds
+[2021-10-21 18:38:35,156] {scheduler_job.py:182} INFO - Started process (PID=156) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:38:35,157] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:38:35,157] {logging_mixin.py:104} INFO - [2021-10-21 18:38:35,157] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:38:35,159] {logging_mixin.py:104} INFO - [2021-10-21 18:38:35,158] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 46
+    refined_stg =
+                 ^
+SyntaxError: invalid syntax
+[2021-10-21 18:38:35,159] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:38:35,172] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.017 seconds
+[2021-10-21 18:39:05,267] {scheduler_job.py:182} INFO - Started process (PID=159) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:39:05,268] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:39:05,271] {logging_mixin.py:104} INFO - [2021-10-21 18:39:05,270] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:39:05,272] {logging_mixin.py:104} INFO - [2021-10-21 18:39:05,272] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 46
+    refined_stg =
+                 ^
+SyntaxError: invalid syntax
+[2021-10-21 18:39:05,273] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:39:05,285] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.019 seconds
+[2021-10-21 18:39:35,390] {scheduler_job.py:182} INFO - Started process (PID=162) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:39:35,391] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:39:35,391] {logging_mixin.py:104} INFO - [2021-10-21 18:39:35,391] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:39:35,478] {logging_mixin.py:104} INFO - [2021-10-21 18:39:35,477] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 113, in <module>
+    job_name = glue_job_name,
+NameError: name 'glue_job_name' is not defined
+[2021-10-21 18:39:35,478] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:39:35,483] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.095 seconds
+[2021-10-21 18:40:05,513] {scheduler_job.py:182} INFO - Started process (PID=165) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:40:05,514] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:40:05,515] {logging_mixin.py:104} INFO - [2021-10-21 18:40:05,515] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:40:05,607] {logging_mixin.py:104} INFO - [2021-10-21 18:40:05,606] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 114, in <module>
+    job_name = glue_job_name,
+NameError: name 'glue_job_name' is not defined
+[2021-10-21 18:40:05,607] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:40:05,614] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.105 seconds
+[2021-10-21 18:40:35,631] {scheduler_job.py:182} INFO - Started process (PID=168) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:40:35,632] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:40:35,632] {logging_mixin.py:104} INFO - [2021-10-21 18:40:35,632] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:40:35,721] {logging_mixin.py:104} INFO - [2021-10-21 18:40:35,721] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 114, in <module>
+    job_name = glue_job_name,
+NameError: name 'glue_job_name' is not defined
+[2021-10-21 18:40:35,721] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:40:35,726] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.097 seconds
+[2021-10-21 18:41:05,761] {scheduler_job.py:182} INFO - Started process (PID=171) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:41:05,762] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:41:05,762] {logging_mixin.py:104} INFO - [2021-10-21 18:41:05,762] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:41:05,843] {logging_mixin.py:104} INFO - [2021-10-21 18:41:05,842] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 115, in <module>
+    job_desc = f"triggering glue job {glue_job_name}",
+NameError: name 'glue_job_name' is not defined
+[2021-10-21 18:41:05,843] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:41:05,848] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.089 seconds
+[2021-10-21 18:41:35,898] {scheduler_job.py:182} INFO - Started process (PID=174) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:41:35,899] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:41:35,899] {logging_mixin.py:104} INFO - [2021-10-21 18:41:35,899] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:41:36,021] {logging_mixin.py:104} INFO - [2021-10-21 18:41:36,021] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 115, in <module>
+    job_desc = f"triggering glue job {glue_job_name}",
+NameError: name 'glue_job_name' is not defined
+[2021-10-21 18:41:36,021] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:41:36,026] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.131 seconds
+[2021-10-21 18:42:07,021] {scheduler_job.py:182} INFO - Started process (PID=177) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:42:07,026] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:42:07,026] {logging_mixin.py:104} INFO - [2021-10-21 18:42:07,026] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:42:07,108] {logging_mixin.py:104} INFO - [2021-10-21 18:42:07,107] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 115, in <module>
+    job_desc = f"triggering glue job {glue_job_name}",
+NameError: name 'glue_job_name' is not defined
+[2021-10-21 18:42:07,108] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:42:07,112] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.093 seconds
+[2021-10-21 18:42:37,153] {scheduler_job.py:182} INFO - Started process (PID=180) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:42:37,154] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:42:37,155] {logging_mixin.py:104} INFO - [2021-10-21 18:42:37,155] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:42:37,255] {logging_mixin.py:104} INFO - [2021-10-21 18:42:37,248] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 119, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 89, in __call__
+    obj: BaseOperator = type.__call__(cls, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/amazon/aws/operators/glue.py", line 81, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 424, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/helpers.py", line 46, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (Raw to Refined) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2021-10-21 18:42:37,255] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:42:37,261] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.110 seconds
+[2021-10-21 18:43:07,323] {scheduler_job.py:182} INFO - Started process (PID=183) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:43:07,326] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:43:07,327] {logging_mixin.py:104} INFO - [2021-10-21 18:43:07,327] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:43:07,411] {logging_mixin.py:104} INFO - [2021-10-21 18:43:07,410] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 119, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 89, in __call__
+    obj: BaseOperator = type.__call__(cls, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/amazon/aws/operators/glue.py", line 81, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 424, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/helpers.py", line 46, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (Raw to Refined) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2021-10-21 18:43:07,411] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:43:07,415] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.096 seconds
+[2021-10-21 18:43:37,447] {scheduler_job.py:182} INFO - Started process (PID=186) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:43:37,449] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:43:37,450] {logging_mixin.py:104} INFO - [2021-10-21 18:43:37,450] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:43:37,532] {logging_mixin.py:104} INFO - [2021-10-21 18:43:37,532] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 119, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 89, in __call__
+    obj: BaseOperator = type.__call__(cls, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/amazon/aws/operators/glue.py", line 81, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 424, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/helpers.py", line 46, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (Raw to Refined) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2021-10-21 18:43:37,533] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:43:37,537] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.092 seconds
+[2021-10-21 18:44:07,564] {scheduler_job.py:182} INFO - Started process (PID=189) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:44:07,566] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:44:07,567] {logging_mixin.py:104} INFO - [2021-10-21 18:44:07,567] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:44:07,649] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:44:07,658] {logging_mixin.py:104} INFO - [2021-10-21 18:44:07,658] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:44:07,669] {logging_mixin.py:104} INFO - [2021-10-21 18:44:07,669] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:44:07,680] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.120 seconds
+[2021-10-21 18:44:38,684] {scheduler_job.py:182} INFO - Started process (PID=192) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:44:38,690] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:44:38,691] {logging_mixin.py:104} INFO - [2021-10-21 18:44:38,691] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:44:38,779] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:44:38,787] {logging_mixin.py:104} INFO - [2021-10-21 18:44:38,787] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:44:38,800] {logging_mixin.py:104} INFO - [2021-10-21 18:44:38,800] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:44:38,806] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.125 seconds
+[2021-10-21 18:45:09,802] {scheduler_job.py:182} INFO - Started process (PID=195) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:45:09,805] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:45:09,806] {logging_mixin.py:104} INFO - [2021-10-21 18:45:09,806] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:45:09,897] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:45:09,907] {logging_mixin.py:104} INFO - [2021-10-21 18:45:09,907] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:45:09,921] {logging_mixin.py:104} INFO - [2021-10-21 18:45:09,921] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:45:09,932] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.133 seconds
+[2021-10-21 18:45:40,928] {scheduler_job.py:182} INFO - Started process (PID=198) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:45:40,929] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:45:40,929] {logging_mixin.py:104} INFO - [2021-10-21 18:45:40,929] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:45:41,008] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:45:41,015] {logging_mixin.py:104} INFO - [2021-10-21 18:45:41,015] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:45:41,027] {logging_mixin.py:104} INFO - [2021-10-21 18:45:41,027] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:45:41,034] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.108 seconds
+[2021-10-21 18:46:11,060] {scheduler_job.py:182} INFO - Started process (PID=201) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:46:11,061] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:46:11,063] {logging_mixin.py:104} INFO - [2021-10-21 18:46:11,062] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:46:11,152] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:46:11,161] {logging_mixin.py:104} INFO - [2021-10-21 18:46:11,161] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:46:11,172] {logging_mixin.py:104} INFO - [2021-10-21 18:46:11,172] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:46:11,183] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.126 seconds
+[2021-10-21 18:46:42,180] {scheduler_job.py:182} INFO - Started process (PID=204) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:46:42,181] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:46:42,182] {logging_mixin.py:104} INFO - [2021-10-21 18:46:42,182] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:46:42,309] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:46:42,320] {logging_mixin.py:104} INFO - [2021-10-21 18:46:42,320] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:46:42,331] {logging_mixin.py:104} INFO - [2021-10-21 18:46:42,330] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:46:42,342] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.165 seconds
+[2021-10-21 18:47:13,307] {scheduler_job.py:182} INFO - Started process (PID=207) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:47:13,308] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:47:13,309] {logging_mixin.py:104} INFO - [2021-10-21 18:47:13,309] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:47:13,397] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:47:13,407] {logging_mixin.py:104} INFO - [2021-10-21 18:47:13,406] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:47:13,422] {logging_mixin.py:104} INFO - [2021-10-21 18:47:13,422] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:47:13,431] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.126 seconds
+[2021-10-21 18:47:44,453] {scheduler_job.py:182} INFO - Started process (PID=210) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:47:44,454] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:47:44,455] {logging_mixin.py:104} INFO - [2021-10-21 18:47:44,455] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:47:44,541] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:47:44,550] {logging_mixin.py:104} INFO - [2021-10-21 18:47:44,550] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:47:44,564] {logging_mixin.py:104} INFO - [2021-10-21 18:47:44,564] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:47:44,572] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.121 seconds
+[2021-10-21 18:48:15,574] {scheduler_job.py:182} INFO - Started process (PID=213) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:48:15,575] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:48:15,576] {logging_mixin.py:104} INFO - [2021-10-21 18:48:15,576] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:48:15,686] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:48:15,694] {logging_mixin.py:104} INFO - [2021-10-21 18:48:15,694] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:48:15,706] {logging_mixin.py:104} INFO - [2021-10-21 18:48:15,706] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 18:48:15,717] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.144 seconds
+[2021-10-21 18:48:46,690] {scheduler_job.py:182} INFO - Started process (PID=217) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:48:46,691] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:48:46,692] {logging_mixin.py:104} INFO - [2021-10-21 18:48:46,692] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:48:46,782] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:48:46,790] {logging_mixin.py:104} INFO - [2021-10-21 18:48:46,790] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:48:46,804] {logging_mixin.py:104} INFO - [2021-10-21 18:48:46,804] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 18:48:46,812] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.124 seconds
+[2021-10-21 18:49:16,860] {scheduler_job.py:182} INFO - Started process (PID=221) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:49:16,861] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:49:16,861] {logging_mixin.py:104} INFO - [2021-10-21 18:49:16,861] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:49:16,971] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:49:16,983] {logging_mixin.py:104} INFO - [2021-10-21 18:49:16,983] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:49:17,003] {logging_mixin.py:104} INFO - [2021-10-21 18:49:17,002] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 18:49:17,014] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.157 seconds
+[2021-10-21 18:49:47,965] {scheduler_job.py:182} INFO - Started process (PID=224) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:49:47,966] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:49:47,967] {logging_mixin.py:104} INFO - [2021-10-21 18:49:47,967] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:49:48,060] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:49:48,067] {logging_mixin.py:104} INFO - [2021-10-21 18:49:48,067] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:49:48,077] {logging_mixin.py:104} INFO - [2021-10-21 18:49:48,077] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 18:49:48,084] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.121 seconds
+[2021-10-21 18:50:18,121] {scheduler_job.py:182} INFO - Started process (PID=227) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:50:18,121] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:50:18,122] {logging_mixin.py:104} INFO - [2021-10-21 18:50:18,122] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:50:18,237] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:50:18,245] {logging_mixin.py:104} INFO - [2021-10-21 18:50:18,245] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:50:18,258] {logging_mixin.py:104} INFO - [2021-10-21 18:50:18,258] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 18:50:18,267] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.149 seconds
+[2021-10-21 18:50:49,243] {scheduler_job.py:182} INFO - Started process (PID=230) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:50:49,244] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:50:49,245] {logging_mixin.py:104} INFO - [2021-10-21 18:50:49,245] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:50:49,336] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:50:49,343] {logging_mixin.py:104} INFO - [2021-10-21 18:50:49,343] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:50:49,354] {logging_mixin.py:104} INFO - [2021-10-21 18:50:49,354] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 18:50:49,361] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.121 seconds
+[2021-10-21 18:51:19,381] {scheduler_job.py:182} INFO - Started process (PID=233) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:51:19,383] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:51:19,383] {logging_mixin.py:104} INFO - [2021-10-21 18:51:19,383] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:51:19,493] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:51:19,501] {logging_mixin.py:104} INFO - [2021-10-21 18:51:19,500] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:51:19,511] {logging_mixin.py:104} INFO - [2021-10-21 18:51:19,511] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 18:51:19,518] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.139 seconds
+[2021-10-21 18:51:50,509] {scheduler_job.py:182} INFO - Started process (PID=236) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:51:50,510] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:51:50,511] {logging_mixin.py:104} INFO - [2021-10-21 18:51:50,511] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:51:50,601] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:51:50,608] {logging_mixin.py:104} INFO - [2021-10-21 18:51:50,608] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:51:50,619] {logging_mixin.py:104} INFO - [2021-10-21 18:51:50,619] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 18:51:50,626] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.119 seconds
+[2021-10-21 18:52:21,637] {scheduler_job.py:182} INFO - Started process (PID=239) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:52:21,638] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:52:21,639] {logging_mixin.py:104} INFO - [2021-10-21 18:52:21,639] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:52:21,739] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:52:21,748] {logging_mixin.py:104} INFO - [2021-10-21 18:52:21,748] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:52:21,762] {logging_mixin.py:104} INFO - [2021-10-21 18:52:21,762] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 18:52:21,770] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.134 seconds
+[2021-10-21 18:52:51,787] {scheduler_job.py:182} INFO - Started process (PID=242) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:52:51,788] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:52:51,789] {logging_mixin.py:104} INFO - [2021-10-21 18:52:51,789] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:52:51,886] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:52:51,898] {logging_mixin.py:104} INFO - [2021-10-21 18:52:51,898] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:52:51,913] {logging_mixin.py:104} INFO - [2021-10-21 18:52:51,913] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 18:52:51,922] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.136 seconds
+[2021-10-21 18:53:22,913] {scheduler_job.py:182} INFO - Started process (PID=245) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:53:22,914] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:53:22,915] {logging_mixin.py:104} INFO - [2021-10-21 18:53:22,915] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:53:23,011] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:53:23,019] {logging_mixin.py:104} INFO - [2021-10-21 18:53:23,019] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:53:23,031] {logging_mixin.py:104} INFO - [2021-10-21 18:53:23,030] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 18:53:23,039] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.128 seconds
+[2021-10-21 18:53:54,036] {scheduler_job.py:182} INFO - Started process (PID=248) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:53:54,037] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:53:54,038] {logging_mixin.py:104} INFO - [2021-10-21 18:53:54,038] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:53:54,128] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:53:54,136] {logging_mixin.py:104} INFO - [2021-10-21 18:53:54,135] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:53:54,149] {logging_mixin.py:104} INFO - [2021-10-21 18:53:54,149] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 18:53:54,160] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.127 seconds
+[2021-10-21 18:54:25,162] {scheduler_job.py:182} INFO - Started process (PID=251) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:54:25,167] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:54:25,167] {logging_mixin.py:104} INFO - [2021-10-21 18:54:25,167] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:54:25,250] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:54:25,258] {logging_mixin.py:104} INFO - [2021-10-21 18:54:25,258] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:54:25,270] {logging_mixin.py:104} INFO - [2021-10-21 18:54:25,270] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 18:54:25,278] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.118 seconds
+[2021-10-21 18:54:56,287] {scheduler_job.py:182} INFO - Started process (PID=254) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:54:56,288] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:54:56,289] {logging_mixin.py:104} INFO - [2021-10-21 18:54:56,289] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:54:56,375] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:54:56,382] {logging_mixin.py:104} INFO - [2021-10-21 18:54:56,382] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:54:56,394] {logging_mixin.py:104} INFO - [2021-10-21 18:54:56,394] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 18:54:56,401] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.116 seconds
+[2021-10-21 18:55:26,420] {scheduler_job.py:182} INFO - Started process (PID=257) to work on /opt/airflow/dags/tutorial.py
+[2021-10-21 18:55:26,420] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2021-10-21 18:55:26,421] {logging_mixin.py:104} INFO - [2021-10-21 18:55:26,421] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:55:26,524] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/tutorial.py
+[2021-10-21 18:55:26,532] {logging_mixin.py:104} INFO - [2021-10-21 18:55:26,532] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 18:55:26,543] {logging_mixin.py:104} INFO - [2021-10-21 18:55:26,543] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 18:55:26,550] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/tutorial.py took 0.132 seconds

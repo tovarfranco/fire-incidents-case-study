@@ -1,0 +1,528 @@
+[2021-10-21 18:17:37,180] {scheduler_job.py:182} INFO - Started process (PID=33) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:17:37,182] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:17:37,184] {logging_mixin.py:104} INFO - [2021-10-21 18:17:37,184] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:17:37,772] {logging_mixin.py:104} INFO - [2021-10-21 18:17:37,770] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:17:37,773] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:17:37,790] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.617 seconds
+[2021-10-21 18:18:07,945] {scheduler_job.py:182} INFO - Started process (PID=36) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:18:07,946] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:18:07,947] {logging_mixin.py:104} INFO - [2021-10-21 18:18:07,947] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:18:08,056] {logging_mixin.py:104} INFO - [2021-10-21 18:18:08,055] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:18:08,057] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:18:08,064] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.121 seconds
+[2021-10-21 18:18:38,163] {scheduler_job.py:182} INFO - Started process (PID=39) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:18:38,164] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:18:38,165] {logging_mixin.py:104} INFO - [2021-10-21 18:18:38,164] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:18:38,283] {logging_mixin.py:104} INFO - [2021-10-21 18:18:38,283] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:18:38,284] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:18:38,289] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.128 seconds
+[2021-10-21 18:19:08,399] {scheduler_job.py:182} INFO - Started process (PID=42) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:19:08,400] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:19:08,401] {logging_mixin.py:104} INFO - [2021-10-21 18:19:08,401] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:19:08,509] {logging_mixin.py:104} INFO - [2021-10-21 18:19:08,508] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:19:08,509] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:19:08,514] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.118 seconds
+[2021-10-21 18:19:38,646] {scheduler_job.py:182} INFO - Started process (PID=45) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:19:38,647] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:19:38,648] {logging_mixin.py:104} INFO - [2021-10-21 18:19:38,648] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:19:38,771] {logging_mixin.py:104} INFO - [2021-10-21 18:19:38,770] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:19:38,771] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:19:38,778] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.135 seconds
+[2021-10-21 18:20:08,856] {scheduler_job.py:182} INFO - Started process (PID=48) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:20:08,857] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:20:08,858] {logging_mixin.py:104} INFO - [2021-10-21 18:20:08,858] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:20:08,990] {logging_mixin.py:104} INFO - [2021-10-21 18:20:08,989] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:20:08,990] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:20:08,996] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.143 seconds
+[2021-10-21 18:20:39,099] {scheduler_job.py:182} INFO - Started process (PID=51) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:20:39,100] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:20:39,101] {logging_mixin.py:104} INFO - [2021-10-21 18:20:39,101] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:20:39,257] {logging_mixin.py:104} INFO - [2021-10-21 18:20:39,256] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:20:39,258] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:20:39,264] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.167 seconds
+[2021-10-21 18:21:09,327] {scheduler_job.py:182} INFO - Started process (PID=54) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:21:09,328] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:21:09,329] {logging_mixin.py:104} INFO - [2021-10-21 18:21:09,328] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:21:09,465] {logging_mixin.py:104} INFO - [2021-10-21 18:21:09,464] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:21:09,465] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:21:09,472] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.147 seconds
+[2021-10-21 18:21:39,576] {scheduler_job.py:182} INFO - Started process (PID=57) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:21:39,577] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:21:39,577] {logging_mixin.py:104} INFO - [2021-10-21 18:21:39,577] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:21:39,681] {logging_mixin.py:104} INFO - [2021-10-21 18:21:39,680] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:21:39,682] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:21:39,687] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.113 seconds
+[2021-10-21 18:22:09,775] {scheduler_job.py:182} INFO - Started process (PID=60) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:22:09,777] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:22:09,777] {logging_mixin.py:104} INFO - [2021-10-21 18:22:09,777] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:22:09,879] {logging_mixin.py:104} INFO - [2021-10-21 18:22:09,879] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:22:09,880] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:22:09,885] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.112 seconds
+[2021-10-21 18:22:40,006] {scheduler_job.py:182} INFO - Started process (PID=63) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:22:40,007] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:22:40,008] {logging_mixin.py:104} INFO - [2021-10-21 18:22:40,008] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:22:40,102] {logging_mixin.py:104} INFO - [2021-10-21 18:22:40,101] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 18:22:40,102] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:22:40,107] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.103 seconds
+[2021-10-21 18:23:10,211] {scheduler_job.py:182} INFO - Started process (PID=66) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:23:10,211] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:23:10,212] {logging_mixin.py:104} INFO - [2021-10-21 18:23:10,212] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:23:10,213] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:23:10,225] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.017 seconds
+[2021-10-21 18:23:40,355] {scheduler_job.py:182} INFO - Started process (PID=69) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:23:40,355] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:23:40,356] {logging_mixin.py:104} INFO - [2021-10-21 18:23:40,356] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:23:40,357] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:23:40,366] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.014 seconds
+[2021-10-21 18:24:10,542] {scheduler_job.py:182} INFO - Started process (PID=72) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:24:10,544] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:24:10,544] {logging_mixin.py:104} INFO - [2021-10-21 18:24:10,544] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:24:10,546] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:24:10,563] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.025 seconds
+[2021-10-21 18:24:40,677] {scheduler_job.py:182} INFO - Started process (PID=74) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:24:40,679] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:24:40,680] {logging_mixin.py:104} INFO - [2021-10-21 18:24:40,680] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:24:40,681] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:24:40,696] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.021 seconds
+[2021-10-21 18:25:10,803] {scheduler_job.py:182} INFO - Started process (PID=77) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:25:10,803] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:25:10,804] {logging_mixin.py:104} INFO - [2021-10-21 18:25:10,804] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:25:10,805] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:25:10,814] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.014 seconds
+[2021-10-21 18:25:40,932] {scheduler_job.py:182} INFO - Started process (PID=80) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:25:40,933] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:25:40,934] {logging_mixin.py:104} INFO - [2021-10-21 18:25:40,933] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:25:40,934] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:25:40,944] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.016 seconds
+[2021-10-21 18:26:11,060] {scheduler_job.py:182} INFO - Started process (PID=83) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:26:11,060] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:26:11,061] {logging_mixin.py:104} INFO - [2021-10-21 18:26:11,061] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:26:11,062] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:26:11,072] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:26:41,185] {scheduler_job.py:182} INFO - Started process (PID=86) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:26:41,186] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:26:41,186] {logging_mixin.py:104} INFO - [2021-10-21 18:26:41,186] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:26:41,187] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:26:41,197] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:27:11,306] {scheduler_job.py:182} INFO - Started process (PID=89) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:27:11,307] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:27:11,308] {logging_mixin.py:104} INFO - [2021-10-21 18:27:11,308] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:27:11,309] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:27:11,321] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.017 seconds
+[2021-10-21 18:27:41,452] {scheduler_job.py:182} INFO - Started process (PID=92) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:27:41,453] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:27:41,454] {logging_mixin.py:104} INFO - [2021-10-21 18:27:41,454] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:27:41,455] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:27:41,474] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.025 seconds
+[2021-10-21 18:28:11,588] {scheduler_job.py:182} INFO - Started process (PID=95) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:28:11,588] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:28:11,589] {logging_mixin.py:104} INFO - [2021-10-21 18:28:11,589] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:28:11,590] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:28:11,601] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.016 seconds
+[2021-10-21 18:28:41,707] {scheduler_job.py:182} INFO - Started process (PID=98) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:28:41,708] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:28:41,708] {logging_mixin.py:104} INFO - [2021-10-21 18:28:41,708] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:28:41,709] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:28:41,720] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.017 seconds
+[2021-10-21 18:29:11,819] {scheduler_job.py:182} INFO - Started process (PID=101) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:29:11,820] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:29:11,820] {logging_mixin.py:104} INFO - [2021-10-21 18:29:11,820] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:29:11,821] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:29:11,832] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:29:41,938] {scheduler_job.py:182} INFO - Started process (PID=104) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:29:41,938] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:29:41,939] {logging_mixin.py:104} INFO - [2021-10-21 18:29:41,939] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:29:41,940] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:29:41,950] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:30:12,054] {scheduler_job.py:182} INFO - Started process (PID=107) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:30:12,055] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:30:12,056] {logging_mixin.py:104} INFO - [2021-10-21 18:30:12,056] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:30:12,057] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:30:12,067] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:30:42,185] {scheduler_job.py:182} INFO - Started process (PID=110) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:30:42,187] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:30:42,187] {logging_mixin.py:104} INFO - [2021-10-21 18:30:42,187] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:30:42,188] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:30:42,199] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:31:12,311] {scheduler_job.py:182} INFO - Started process (PID=113) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:31:12,312] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:31:12,313] {logging_mixin.py:104} INFO - [2021-10-21 18:31:12,312] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:31:12,314] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:31:12,332] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.025 seconds
+[2021-10-21 18:31:42,443] {scheduler_job.py:182} INFO - Started process (PID=116) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:31:42,444] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:31:42,444] {logging_mixin.py:104} INFO - [2021-10-21 18:31:42,444] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:31:42,445] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:31:42,456] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:32:12,569] {scheduler_job.py:182} INFO - Started process (PID=119) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:32:12,571] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:32:12,571] {logging_mixin.py:104} INFO - [2021-10-21 18:32:12,571] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:32:12,573] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:32:12,584] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.018 seconds
+[2021-10-21 18:32:42,694] {scheduler_job.py:182} INFO - Started process (PID=122) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:32:42,695] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:32:42,696] {logging_mixin.py:104} INFO - [2021-10-21 18:32:42,696] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:32:42,697] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:32:42,711] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.020 seconds
+[2021-10-21 18:33:12,819] {scheduler_job.py:182} INFO - Started process (PID=125) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:33:12,820] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:33:12,821] {logging_mixin.py:104} INFO - [2021-10-21 18:33:12,821] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:33:12,822] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:33:12,834] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.019 seconds
+[2021-10-21 18:33:42,942] {scheduler_job.py:182} INFO - Started process (PID=128) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:33:42,943] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:33:42,944] {logging_mixin.py:104} INFO - [2021-10-21 18:33:42,944] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:33:42,945] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:33:42,959] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.022 seconds
+[2021-10-21 18:34:13,071] {scheduler_job.py:182} INFO - Started process (PID=131) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:34:13,072] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:34:13,073] {logging_mixin.py:104} INFO - [2021-10-21 18:34:13,073] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:34:13,075] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:34:13,087] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.019 seconds
+[2021-10-21 18:34:43,195] {scheduler_job.py:182} INFO - Started process (PID=134) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:34:43,196] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:34:43,197] {logging_mixin.py:104} INFO - [2021-10-21 18:34:43,197] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:34:43,198] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:34:43,208] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:35:13,312] {scheduler_job.py:182} INFO - Started process (PID=137) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:35:13,313] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:35:13,313] {logging_mixin.py:104} INFO - [2021-10-21 18:35:13,313] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:35:13,314] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:35:13,325] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:35:43,442] {scheduler_job.py:182} INFO - Started process (PID=140) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:35:43,443] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:35:43,444] {logging_mixin.py:104} INFO - [2021-10-21 18:35:43,444] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:35:43,445] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:35:43,456] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.016 seconds
+[2021-10-21 18:36:13,560] {scheduler_job.py:182} INFO - Started process (PID=143) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:36:13,562] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:36:13,563] {logging_mixin.py:104} INFO - [2021-10-21 18:36:13,562] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:36:13,564] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:36:13,574] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.016 seconds
+[2021-10-21 18:36:43,687] {scheduler_job.py:182} INFO - Started process (PID=146) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:36:43,688] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:36:43,688] {logging_mixin.py:104} INFO - [2021-10-21 18:36:43,688] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:36:43,689] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:36:43,699] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.014 seconds
+[2021-10-21 18:37:13,818] {scheduler_job.py:182} INFO - Started process (PID=149) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:37:13,819] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:37:13,819] {logging_mixin.py:104} INFO - [2021-10-21 18:37:13,819] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:37:13,820] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:37:13,830] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.014 seconds
+[2021-10-21 18:37:43,962] {scheduler_job.py:182} INFO - Started process (PID=152) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:37:43,963] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:37:43,963] {logging_mixin.py:104} INFO - [2021-10-21 18:37:43,963] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:37:43,964] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:37:43,973] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.014 seconds
+[2021-10-21 18:38:14,076] {scheduler_job.py:182} INFO - Started process (PID=155) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:38:14,077] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:38:14,077] {logging_mixin.py:104} INFO - [2021-10-21 18:38:14,077] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:38:14,078] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:38:14,089] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.016 seconds
+[2021-10-21 18:38:44,194] {scheduler_job.py:182} INFO - Started process (PID=158) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:38:44,195] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:38:44,195] {logging_mixin.py:104} INFO - [2021-10-21 18:38:44,195] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:38:44,196] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:38:44,207] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:39:14,311] {scheduler_job.py:182} INFO - Started process (PID=161) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:39:14,313] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:39:14,314] {logging_mixin.py:104} INFO - [2021-10-21 18:39:14,314] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:39:14,315] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:39:14,325] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.016 seconds
+[2021-10-21 18:39:44,431] {scheduler_job.py:182} INFO - Started process (PID=164) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:39:44,432] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:39:44,433] {logging_mixin.py:104} INFO - [2021-10-21 18:39:44,433] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:39:44,434] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:39:44,443] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:40:14,554] {scheduler_job.py:182} INFO - Started process (PID=167) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:40:14,554] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:40:14,555] {logging_mixin.py:104} INFO - [2021-10-21 18:40:14,555] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:40:14,556] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:40:14,566] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:40:44,675] {scheduler_job.py:182} INFO - Started process (PID=170) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:40:44,676] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:40:44,676] {logging_mixin.py:104} INFO - [2021-10-21 18:40:44,676] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:40:44,677] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:40:44,688] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:41:14,809] {scheduler_job.py:182} INFO - Started process (PID=173) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:41:14,809] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:41:14,810] {logging_mixin.py:104} INFO - [2021-10-21 18:41:14,810] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:41:14,811] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:41:14,821] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:41:44,936] {scheduler_job.py:182} INFO - Started process (PID=176) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:41:44,937] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:41:44,938] {logging_mixin.py:104} INFO - [2021-10-21 18:41:44,937] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:41:44,938] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:41:44,949] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.014 seconds
+[2021-10-21 18:42:15,062] {scheduler_job.py:182} INFO - Started process (PID=179) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:42:15,064] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:42:15,064] {logging_mixin.py:104} INFO - [2021-10-21 18:42:15,064] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:42:15,065] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:42:15,075] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:42:45,193] {scheduler_job.py:182} INFO - Started process (PID=182) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:42:45,194] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:42:45,194] {logging_mixin.py:104} INFO - [2021-10-21 18:42:45,194] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:42:45,196] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:42:45,240] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.050 seconds
+[2021-10-21 18:43:15,359] {scheduler_job.py:182} INFO - Started process (PID=185) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:43:15,359] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:43:15,360] {logging_mixin.py:104} INFO - [2021-10-21 18:43:15,360] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:43:15,361] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:43:15,371] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.014 seconds
+[2021-10-21 18:43:45,476] {scheduler_job.py:182} INFO - Started process (PID=188) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:43:45,477] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:43:45,478] {logging_mixin.py:104} INFO - [2021-10-21 18:43:45,478] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:43:45,479] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:43:45,491] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.018 seconds
+[2021-10-21 18:44:15,599] {scheduler_job.py:182} INFO - Started process (PID=191) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:44:15,600] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:44:15,600] {logging_mixin.py:104} INFO - [2021-10-21 18:44:15,600] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:44:15,601] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:44:15,611] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:44:45,718] {scheduler_job.py:182} INFO - Started process (PID=194) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:44:45,719] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:44:45,720] {logging_mixin.py:104} INFO - [2021-10-21 18:44:45,719] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:44:45,721] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:44:45,731] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:45:15,830] {scheduler_job.py:182} INFO - Started process (PID=197) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:45:15,832] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:45:15,833] {logging_mixin.py:104} INFO - [2021-10-21 18:45:15,833] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:45:15,834] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:45:15,846] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.019 seconds
+[2021-10-21 18:45:45,961] {scheduler_job.py:182} INFO - Started process (PID=200) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:45:45,962] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:45:45,962] {logging_mixin.py:104} INFO - [2021-10-21 18:45:45,962] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:45:45,963] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:45:45,974] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:46:16,093] {scheduler_job.py:182} INFO - Started process (PID=203) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:46:16,094] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:46:16,095] {logging_mixin.py:104} INFO - [2021-10-21 18:46:16,095] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:46:16,096] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:46:16,105] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.014 seconds
+[2021-10-21 18:46:46,205] {scheduler_job.py:182} INFO - Started process (PID=206) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:46:46,206] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:46:46,207] {logging_mixin.py:104} INFO - [2021-10-21 18:46:46,207] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:46:46,208] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:46:46,221] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.019 seconds
+[2021-10-21 18:47:16,330] {scheduler_job.py:182} INFO - Started process (PID=209) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:47:16,331] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:47:16,332] {logging_mixin.py:104} INFO - [2021-10-21 18:47:16,332] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:47:16,334] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:47:16,348] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.020 seconds
+[2021-10-21 18:47:46,473] {scheduler_job.py:182} INFO - Started process (PID=212) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:47:46,474] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:47:46,474] {logging_mixin.py:104} INFO - [2021-10-21 18:47:46,474] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:47:46,475] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:47:46,486] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.016 seconds
+[2021-10-21 18:48:16,593] {scheduler_job.py:182} INFO - Started process (PID=215) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:48:16,594] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:48:16,595] {logging_mixin.py:104} INFO - [2021-10-21 18:48:16,595] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:48:16,596] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:48:16,606] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:48:46,712] {scheduler_job.py:182} INFO - Started process (PID=218) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:48:46,713] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:48:46,714] {logging_mixin.py:104} INFO - [2021-10-21 18:48:46,713] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:48:46,715] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:48:46,724] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.014 seconds
+[2021-10-21 18:49:16,833] {scheduler_job.py:182} INFO - Started process (PID=220) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:49:16,834] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:49:16,834] {logging_mixin.py:104} INFO - [2021-10-21 18:49:16,834] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:49:16,836] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:49:16,849] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.018 seconds
+[2021-10-21 18:49:46,958] {scheduler_job.py:182} INFO - Started process (PID=223) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:49:46,959] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:49:46,960] {logging_mixin.py:104} INFO - [2021-10-21 18:49:46,960] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:49:46,961] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:49:46,975] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.019 seconds
+[2021-10-21 18:50:17,095] {scheduler_job.py:182} INFO - Started process (PID=226) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:50:17,095] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:50:17,096] {logging_mixin.py:104} INFO - [2021-10-21 18:50:17,096] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:50:17,097] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:50:17,107] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:50:47,213] {scheduler_job.py:182} INFO - Started process (PID=229) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:50:47,214] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:50:47,215] {logging_mixin.py:104} INFO - [2021-10-21 18:50:47,215] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:50:47,216] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:50:47,226] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:51:17,356] {scheduler_job.py:182} INFO - Started process (PID=232) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:51:17,357] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:51:17,358] {logging_mixin.py:104} INFO - [2021-10-21 18:51:17,358] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:51:17,359] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:51:17,370] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.016 seconds
+[2021-10-21 18:51:47,479] {scheduler_job.py:182} INFO - Started process (PID=235) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:51:47,480] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:51:47,481] {logging_mixin.py:104} INFO - [2021-10-21 18:51:47,481] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:51:47,482] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:51:47,495] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.018 seconds
+[2021-10-21 18:52:17,605] {scheduler_job.py:182} INFO - Started process (PID=238) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:52:17,606] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:52:17,606] {logging_mixin.py:104} INFO - [2021-10-21 18:52:17,606] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:52:17,607] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:52:17,619] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.016 seconds
+[2021-10-21 18:52:47,759] {scheduler_job.py:182} INFO - Started process (PID=241) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:52:47,760] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:52:47,760] {logging_mixin.py:104} INFO - [2021-10-21 18:52:47,760] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:52:47,761] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:52:47,771] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:53:17,881] {scheduler_job.py:182} INFO - Started process (PID=244) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:53:17,882] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:53:17,883] {logging_mixin.py:104} INFO - [2021-10-21 18:53:17,882] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:53:17,883] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:53:17,895] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:53:48,004] {scheduler_job.py:182} INFO - Started process (PID=247) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:53:48,005] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:53:48,006] {logging_mixin.py:104} INFO - [2021-10-21 18:53:48,006] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:53:48,007] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:53:48,017] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:54:18,127] {scheduler_job.py:182} INFO - Started process (PID=250) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:54:18,128] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:54:18,129] {logging_mixin.py:104} INFO - [2021-10-21 18:54:18,129] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:54:18,130] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:54:18,141] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.016 seconds
+[2021-10-21 18:54:48,250] {scheduler_job.py:182} INFO - Started process (PID=253) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:54:48,251] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:54:48,252] {logging_mixin.py:104} INFO - [2021-10-21 18:54:48,252] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:54:48,253] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:54:48,265] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.017 seconds
+[2021-10-21 18:55:18,383] {scheduler_job.py:182} INFO - Started process (PID=256) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:55:18,384] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:55:18,384] {logging_mixin.py:104} INFO - [2021-10-21 18:55:18,384] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:55:18,385] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:55:18,396] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.015 seconds
+[2021-10-21 18:55:48,502] {scheduler_job.py:182} INFO - Started process (PID=259) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:55:48,503] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-10-21 18:55:48,503] {logging_mixin.py:104} INFO - [2021-10-21 18:55:48,503] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:55:48,504] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-10-21 18:55:48,516] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.016 seconds

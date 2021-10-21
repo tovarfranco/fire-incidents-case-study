@@ -1,0 +1,27 @@
+[2021-10-21 19:06:15,574] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: Fire_Incidents_glue.Check_credentials 2021-10-19T00:00:00+00:00 [queued]>
+[2021-10-21 19:06:15,591] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: Fire_Incidents_glue.Check_credentials 2021-10-19T00:00:00+00:00 [queued]>
+[2021-10-21 19:06:15,591] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-21 19:06:15,591] {taskinstance.py:1069} INFO - Starting attempt 1 of 2
+[2021-10-21 19:06:15,592] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-21 19:06:15,601] {taskinstance.py:1089} INFO - Executing <Task(PythonOperator): Check_credentials> on 2021-10-19T00:00:00+00:00
+[2021-10-21 19:06:15,611] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Fire_Incidents_glue', 'Check_credentials', '2021-10-19T00:00:00+00:00', '--job-id', '8', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/fire_incidents_glue.py', '--cfg-path', '/tmp/tmp1h880cuz', '--error-file', '/tmp/tmpm9f27llr']
+[2021-10-21 19:06:15,608] {standard_task_runner.py:52} INFO - Started process 63 to run task
+[2021-10-21 19:06:15,612] {standard_task_runner.py:77} INFO - Job 8: Subtask Check_credentials
+[2021-10-21 19:06:15,659] {logging_mixin.py:104} INFO - Running <TaskInstance: Fire_Incidents_glue.Check_credentials 2021-10-19T00:00:00+00:00 [running]> on host 9da1750f0b7f
+[2021-10-21 19:06:15,716] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=airflow@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Fire_Incidents_glue
+AIRFLOW_CTX_TASK_ID=Check_credentials
+AIRFLOW_CTX_EXECUTION_DATE=2021-10-19T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-10-19T00:00:00+00:00
+[2021-10-21 19:06:15,717] {logging_mixin.py:104} INFO - The Connection is:
+[2021-10-21 19:06:15,717] {logging_mixin.py:104} INFO - {'region_name': 'us-west-2', 'aws_session_token': 'FwoGZXIvYXdzEGoaDJReBSrOlfC09PeS7SKGAZYj8TJ17+aoC63as7iG5hoBR6sd977vDzKvgWTMf7J1mFWT3CBpgmPbT2hsPhjLMqX6qepk+EEKQgPTWaApYSUDed6XjBkZHt1mKVAH8TpjdS9+8MgDcEZJbapU8wizUZPzy0Yer2ot+23uFsHEWmWBJ9Oaf/mtLOmzdf/1uz3TsCOcbXRIKMvhwosGMij2XzeTshWnu45hR8qAGzfLMl4Zqr9PrjEI3oI7wOhJJWhks7mxcYAB'}
+[2021-10-21 19:06:15,717] {logging_mixin.py:104} INFO - us-west-2
+[2021-10-21 19:06:15,718] {logging_mixin.py:104} INFO - FwoGZXIvYXdzEGoaDJReBSrOlfC09PeS7SKGAZYj8TJ17+aoC63as7iG5hoBR6sd977vDzKvgWTMf7J1mFWT3CBpgmPbT2hsPhjLMqX6qepk+EEKQgPTWaApYSUDed6XjBkZHt1mKVAH8TpjdS9+8MgDcEZJbapU8wizUZPzy0Yer2ot+23uFsHEWmWBJ9Oaf/mtLOmzdf/1uz3TsCOcbXRIKMvhwosGMij2XzeTshWnu45hR8qAGzfLMl4Zqr9PrjEI3oI7wOhJJWhks7mxcYAB
+[2021-10-21 19:06:15,718] {python.py:118} INFO - Done. Returned value was: None
+[2021-10-21 19:06:15,732] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=Fire_Incidents_glue, task_id=Check_credentials, execution_date=20211019T000000, start_date=20211021T190615, end_date=20211021T190615
+[2021-10-21 19:06:15,769] {taskinstance.py:1246} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-10-21 19:06:15,785] {local_task_job.py:146} INFO - Task exited with return code 0

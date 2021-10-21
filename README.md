@@ -226,7 +226,7 @@ This folder will have the refined data in parquet
 
 
 3. Run the spark host 
-   ```bash
+   
    docker run -it -e SPARK_HISTORY_OPTS="$SPARK_HISTORY_OPTS \
    -Dspark.history.fs.logDirectory=s3a://fire-incidents-config-dev/logs/spark \
    -Dspark.hadoop.fs.s3a.access.key=$AWS_ACCESS_KEY_ID
@@ -236,6 +236,30 @@ This folder will have the refined data in parquet
    -p 18080:18080 --name glue_sparkUI glue/sparkui:latest "/opt/spark/bin/spark-class org.apache.spark.deploy.history.HistoryServer"
    ```
 
+# Setting Up Airflow
+
+1. Go to Airflow Folder
+   ```bash
+   cd airflow
+   ```
+
+2. Update the stepfunction arn and the glue job names en each DAG.
+
+3. Create the services
+   ```bash
+   docker-compose up
+   ```
+
+4. Access to Airflow console. In the "Admin" section in "Connections", create a connection to aws:
+   ```bash
+   login: access_key
+   password: secret_access_key
+   {"region_name": "us-west-2", "aws_session_token": "??"}
+   ```
+    
+5. You will see both Dags live, and able to be triggered. 
+
+<img src="images/airflow.png" width="700">
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

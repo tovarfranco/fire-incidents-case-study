@@ -1,0 +1,324 @@
+[2021-08-07 19:15:27,756] {scheduler_job.py:182} INFO - Started process (PID=24) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:15:27,758] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:15:27,759] {logging_mixin.py:104} INFO - [2021-08-07 19:15:27,759] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:15:28,500] {logging_mixin.py:104} INFO - [2021-08-07 19:15:28,496] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:15:28,501] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:15:28,510] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.758 seconds
+[2021-08-07 19:16:27,454] {scheduler_job.py:182} INFO - Started process (PID=347) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:16:27,455] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:16:27,456] {logging_mixin.py:104} INFO - [2021-08-07 19:16:27,456] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:16:27,631] {logging_mixin.py:104} INFO - [2021-08-07 19:16:27,631] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:16:27,632] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:16:27,639] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.190 seconds
+[2021-08-07 19:16:57,910] {scheduler_job.py:182} INFO - Started process (PID=401) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:16:57,911] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:16:57,912] {logging_mixin.py:104} INFO - [2021-08-07 19:16:57,912] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:16:58,073] {logging_mixin.py:104} INFO - [2021-08-07 19:16:58,072] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:16:58,074] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:16:58,079] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.171 seconds
+[2021-08-07 19:17:29,091] {scheduler_job.py:182} INFO - Started process (PID=464) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:17:29,093] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:17:29,094] {logging_mixin.py:104} INFO - [2021-08-07 19:17:29,094] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:17:29,384] {logging_mixin.py:104} INFO - [2021-08-07 19:17:29,383] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:17:29,385] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:17:29,400] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.314 seconds
+[2021-08-07 19:18:00,300] {scheduler_job.py:182} INFO - Started process (PID=520) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:18:00,309] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:18:00,310] {logging_mixin.py:104} INFO - [2021-08-07 19:18:00,310] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:18:00,499] {logging_mixin.py:104} INFO - [2021-08-07 19:18:00,497] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:18:00,500] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:18:00,509] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.213 seconds
+[2021-08-07 19:18:30,578] {scheduler_job.py:182} INFO - Started process (PID=574) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:18:30,579] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:18:30,580] {logging_mixin.py:104} INFO - [2021-08-07 19:18:30,580] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:18:30,710] {logging_mixin.py:104} INFO - [2021-08-07 19:18:30,710] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:18:30,711] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:18:30,718] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.143 seconds
+[2021-08-07 19:19:00,940] {scheduler_job.py:182} INFO - Started process (PID=639) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:19:00,946] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:19:00,947] {logging_mixin.py:104} INFO - [2021-08-07 19:19:00,946] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:19:01,094] {logging_mixin.py:104} INFO - [2021-08-07 19:19:01,093] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:19:01,094] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:19:01,100] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.164 seconds
+[2021-08-07 19:19:31,143] {scheduler_job.py:182} INFO - Started process (PID=692) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:19:31,144] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:19:31,145] {logging_mixin.py:104} INFO - [2021-08-07 19:19:31,145] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:19:31,315] {logging_mixin.py:104} INFO - [2021-08-07 19:19:31,313] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:19:31,315] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:19:31,326] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.188 seconds
+[2021-08-07 19:20:01,368] {scheduler_job.py:182} INFO - Started process (PID=759) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:20:01,370] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:20:01,372] {logging_mixin.py:104} INFO - [2021-08-07 19:20:01,371] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:20:01,525] {logging_mixin.py:104} INFO - [2021-08-07 19:20:01,524] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:20:01,526] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:20:01,533] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.168 seconds
+[2021-08-07 19:20:31,638] {scheduler_job.py:182} INFO - Started process (PID=813) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:20:31,640] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:20:31,641] {logging_mixin.py:104} INFO - [2021-08-07 19:20:31,641] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:20:31,796] {logging_mixin.py:104} INFO - [2021-08-07 19:20:31,794] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:20:31,798] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:20:31,807] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.173 seconds
+[2021-08-07 19:21:01,849] {scheduler_job.py:182} INFO - Started process (PID=876) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:21:01,850] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:21:01,851] {logging_mixin.py:104} INFO - [2021-08-07 19:21:01,850] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:21:01,985] {logging_mixin.py:104} INFO - [2021-08-07 19:21:01,984] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:21:01,985] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:21:01,998] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.152 seconds
+[2021-08-07 19:21:32,030] {scheduler_job.py:182} INFO - Started process (PID=930) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:21:32,031] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:21:32,031] {logging_mixin.py:104} INFO - [2021-08-07 19:21:32,031] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:21:32,154] {logging_mixin.py:104} INFO - [2021-08-07 19:21:32,153] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:21:32,154] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:21:32,162] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.134 seconds
+[2021-08-07 19:22:02,227] {scheduler_job.py:182} INFO - Started process (PID=993) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:22:02,228] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:22:02,229] {logging_mixin.py:104} INFO - [2021-08-07 19:22:02,229] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:22:02,354] {logging_mixin.py:104} INFO - [2021-08-07 19:22:02,353] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:22:02,355] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:22:02,360] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.136 seconds
+[2021-08-07 19:22:46,847] {scheduler_job.py:182} INFO - Started process (PID=1028) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:22:46,853] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:22:46,854] {logging_mixin.py:104} INFO - [2021-08-07 19:22:46,854] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:22:47,054] {logging_mixin.py:104} INFO - [2021-08-07 19:22:47,052] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:22:47,055] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:22:47,063] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.227 seconds
+[2021-08-07 19:23:17,584] {scheduler_job.py:182} INFO - Started process (PID=1092) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:23:17,585] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:23:17,586] {logging_mixin.py:104} INFO - [2021-08-07 19:23:17,586] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:23:17,677] {logging_mixin.py:104} INFO - [2021-08-07 19:23:17,676] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:23:17,677] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:23:17,682] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.100 seconds
+[2021-08-07 19:23:47,759] {scheduler_job.py:182} INFO - Started process (PID=1153) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:23:47,761] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:23:47,762] {logging_mixin.py:104} INFO - [2021-08-07 19:23:47,762] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:23:47,908] {logging_mixin.py:104} INFO - [2021-08-07 19:23:47,906] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:23:47,910] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:23:47,918] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.163 seconds
+[2021-08-07 19:24:18,694] {scheduler_job.py:182} INFO - Started process (PID=1206) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:24:18,695] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:24:18,696] {logging_mixin.py:104} INFO - [2021-08-07 19:24:18,696] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:24:18,788] {logging_mixin.py:104} INFO - [2021-08-07 19:24:18,787] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:24:18,789] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:24:18,794] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.104 seconds
+[2021-08-07 19:24:49,506] {scheduler_job.py:182} INFO - Started process (PID=1270) to work on /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:24:49,507] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/pipeline_spark.py for tasks to queue
+[2021-08-07 19:24:49,507] {logging_mixin.py:104} INFO - [2021-08-07 19:24:49,507] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:24:49,597] {logging_mixin.py:104} INFO - [2021-08-07 19:24:49,596] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/pipeline_spark.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_spark.py", line 47, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 381, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-08-07 19:24:49,597] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_spark.py
+[2021-08-07 19:24:49,602] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/pipeline_spark.py took 0.099 seconds

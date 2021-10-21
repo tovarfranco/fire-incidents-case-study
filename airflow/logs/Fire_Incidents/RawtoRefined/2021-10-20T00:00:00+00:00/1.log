@@ -1,0 +1,36 @@
+[2021-10-21 19:05:26,971] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: Fire_Incidents.RawtoRefined 2021-10-20T00:00:00+00:00 [queued]>
+[2021-10-21 19:05:26,987] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: Fire_Incidents.RawtoRefined 2021-10-20T00:00:00+00:00 [queued]>
+[2021-10-21 19:05:26,987] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-21 19:05:26,987] {taskinstance.py:1069} INFO - Starting attempt 1 of 2
+[2021-10-21 19:05:26,987] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-21 19:05:26,997] {taskinstance.py:1089} INFO - Executing <Task(AwsGlueJobOperator): RawtoRefined> on 2021-10-20T00:00:00+00:00
+[2021-10-21 19:05:27,001] {standard_task_runner.py:52} INFO - Started process 58 to run task
+[2021-10-21 19:05:27,005] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Fire_Incidents', 'RawtoRefined', '2021-10-20T00:00:00+00:00', '--job-id', '5', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/fire_incidents_glue.py', '--cfg-path', '/tmp/tmpaxalu2kz', '--error-file', '/tmp/tmp4mkxuftk']
+[2021-10-21 19:05:27,005] {standard_task_runner.py:77} INFO - Job 5: Subtask RawtoRefined
+[2021-10-21 19:05:27,040] {logging_mixin.py:104} INFO - Running <TaskInstance: Fire_Incidents.RawtoRefined 2021-10-20T00:00:00+00:00 [running]> on host 9da1750f0b7f
+[2021-10-21 19:05:27,069] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=airflow@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Fire_Incidents
+AIRFLOW_CTX_TASK_ID=RawtoRefined
+AIRFLOW_CTX_EXECUTION_DATE=2021-10-20T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-10-20T00:00:00+00:00
+[2021-10-21 19:05:27,070] {glue.py:120} INFO - Initializing AWS Glue Job: fire-incidents-raw-refined-dev
+[2021-10-21 19:05:27,070] {base_aws.py:368} INFO - Airflow Connection: aws_conn_id=aws_default
+[2021-10-21 19:05:27,076] {base_aws.py:166} INFO - Credentials retrieved from login
+[2021-10-21 19:05:27,076] {base_aws.py:87} INFO - Creating session with aws_access_key_id=ASIARQXYPZQ7ZSATAM6E region_name=us-west-2
+[2021-10-21 19:05:27,090] {base_aws.py:157} INFO - role_arn is None
+[2021-10-21 19:05:28,305] {glue.py:167} INFO - Job Already exist. Returning Name of the job
+[2021-10-21 19:05:28,918] {glue.py:155} INFO - Polling for AWS Glue Job fire-incidents-raw-refined-dev current run state with status RUNNING
+[2021-10-21 19:05:35,265] {glue.py:155} INFO - Polling for AWS Glue Job fire-incidents-raw-refined-dev current run state with status RUNNING
+[2021-10-21 19:05:41,539] {glue.py:155} INFO - Polling for AWS Glue Job fire-incidents-raw-refined-dev current run state with status RUNNING
+[2021-10-21 19:05:47,850] {glue.py:155} INFO - Polling for AWS Glue Job fire-incidents-raw-refined-dev current run state with status RUNNING
+[2021-10-21 19:05:54,132] {glue.py:155} INFO - Polling for AWS Glue Job fire-incidents-raw-refined-dev current run state with status RUNNING
+[2021-10-21 19:06:00,459] {glue.py:155} INFO - Polling for AWS Glue Job fire-incidents-raw-refined-dev current run state with status STOPPING
+[2021-10-21 19:06:06,991] {glue.py:155} INFO - Polling for AWS Glue Job fire-incidents-raw-refined-dev current run state with status STOPPING
+[2021-10-21 19:06:07,525] {local_task_job.py:188} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2021-10-21 19:06:07,526] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 58
+[2021-10-21 19:06:07,527] {taskinstance.py:1265} ERROR - Received SIGTERM. Terminating subprocesses.
+[2021-10-21 19:06:07,553] {process_utils.py:66} INFO - Process psutil.Process(pid=58, status='terminated', exitcode=0, started='19:05:26') (58) terminated with exit code 0
