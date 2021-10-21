@@ -212,6 +212,21 @@ This folder will have the refined data in parquet
 
 # Spark History Logs
 
+
+1. Download the image
+   ```bash
+   docker build -t glue/sparkui:latest
+   ```
+2. Check the branch you are positioned:
+   ```bash
+   git status
+   ```
+   > Note: You will be placed in branch Main. You should start from Dev
+3. Go to dev:
+   ```bash
+   git checkout dev
+   ```
+
 1. Download the image
    ```bash
    docker build -t glue/sparkui:latest
