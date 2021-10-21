@@ -1,0 +1,274 @@
+[2021-10-21 19:01:01,677] {scheduler_job.py:182} INFO - Started process (PID=32) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:01:01,679] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:01:01,680] {logging_mixin.py:104} INFO - [2021-10-21 19:01:01,680] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:01:02,330] {logging_mixin.py:104} INFO - [2021-10-21 19:01:02,329] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/fire_incidents_sf.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fire_incidents_sf.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 19:01:02,331] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:01:02,340] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.674 seconds
+[2021-10-21 19:01:32,441] {scheduler_job.py:182} INFO - Started process (PID=35) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:01:32,442] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:01:32,443] {logging_mixin.py:104} INFO - [2021-10-21 19:01:32,443] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:01:32,540] {logging_mixin.py:104} INFO - [2021-10-21 19:01:32,539] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/fire_incidents_sf.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fire_incidents_sf.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 19:01:32,541] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:01:32,547] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.108 seconds
+[2021-10-21 19:02:02,645] {scheduler_job.py:182} INFO - Started process (PID=38) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:02:02,645] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:02:02,646] {logging_mixin.py:104} INFO - [2021-10-21 19:02:02,646] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:02:02,731] {logging_mixin.py:104} INFO - [2021-10-21 19:02:02,730] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/fire_incidents_sf.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fire_incidents_sf.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 19:02:02,731] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:02:02,735] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.092 seconds
+[2021-10-21 19:02:32,838] {scheduler_job.py:182} INFO - Started process (PID=41) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:02:32,839] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:02:32,840] {logging_mixin.py:104} INFO - [2021-10-21 19:02:32,840] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:02:32,954] {logging_mixin.py:104} INFO - [2021-10-21 19:02:32,953] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/fire_incidents_sf.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fire_incidents_sf.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 19:02:32,954] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:02:32,960] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.124 seconds
+[2021-10-21 19:03:03,061] {scheduler_job.py:182} INFO - Started process (PID=44) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:03:03,061] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:03:03,062] {logging_mixin.py:104} INFO - [2021-10-21 19:03:03,062] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:03:03,163] {logging_mixin.py:104} INFO - [2021-10-21 19:03:03,162] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/fire_incidents_sf.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fire_incidents_sf.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 19:03:03,164] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:03:03,170] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.111 seconds
+[2021-10-21 19:03:33,279] {scheduler_job.py:182} INFO - Started process (PID=47) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:03:33,280] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:03:33,281] {logging_mixin.py:104} INFO - [2021-10-21 19:03:33,281] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:03:33,418] {logging_mixin.py:104} INFO - [2021-10-21 19:03:33,417] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/fire_incidents_sf.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fire_incidents_sf.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 19:03:33,418] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:03:33,423] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.146 seconds
+[2021-10-21 19:04:03,525] {scheduler_job.py:182} INFO - Started process (PID=50) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:04:03,526] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:04:03,527] {logging_mixin.py:104} INFO - [2021-10-21 19:04:03,527] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:04:03,648] {logging_mixin.py:104} INFO - [2021-10-21 19:04:03,647] {dagbag.py:308} ERROR - Failed to import: /opt/airflow/dags/fire_incidents_sf.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 305, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fire_incidents_sf.py", line 43, in <module>
+    conn = BaseHook.get_connection('aws_default')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `aws_default` isn't defined
+[2021-10-21 19:04:03,649] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:04:03,656] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.133 seconds
+[2021-10-21 19:04:33,756] {scheduler_job.py:182} INFO - Started process (PID=53) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:04:33,757] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:04:33,758] {logging_mixin.py:104} INFO - [2021-10-21 19:04:33,758] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:04:33,857] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:04:33,874] {logging_mixin.py:104} INFO - [2021-10-21 19:04:33,873] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:04:33,887] {logging_mixin.py:104} INFO - [2021-10-21 19:04:33,887] {dag.py:1843} INFO - Creating ORM DAG for Fire_Incidents
+[2021-10-21 19:04:33,896] {logging_mixin.py:104} INFO - [2021-10-21 19:04:33,896] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-19 00:00:00+00:00
+[2021-10-21 19:04:33,917] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.162 seconds
+[2021-10-21 19:05:04,537] {scheduler_job.py:182} INFO - Started process (PID=62) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:05:04,538] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:05:04,539] {logging_mixin.py:104} INFO - [2021-10-21 19:05:04,539] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:05:04,627] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:05:04,634] {logging_mixin.py:104} INFO - [2021-10-21 19:05:04,634] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:05:04,645] {logging_mixin.py:104} INFO - [2021-10-21 19:05:04,645] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:05:04,653] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.118 seconds
+[2021-10-21 19:05:34,726] {scheduler_job.py:182} INFO - Started process (PID=70) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:05:34,727] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:05:34,728] {logging_mixin.py:104} INFO - [2021-10-21 19:05:34,728] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:05:34,824] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:05:34,828] {logging_mixin.py:104} INFO - [2021-10-21 19:05:34,827] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:05:34,839] {logging_mixin.py:104} INFO - [2021-10-21 19:05:34,838] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:05:34,845] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.121 seconds
+[2021-10-21 19:06:04,929] {scheduler_job.py:182} INFO - Started process (PID=73) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:06:04,931] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:06:04,932] {logging_mixin.py:104} INFO - [2021-10-21 19:06:04,932] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:06:05,069] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:06:05,086] {logging_mixin.py:104} INFO - [2021-10-21 19:06:05,086] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:06:05,116] {logging_mixin.py:104} INFO - [2021-10-21 19:06:05,116] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:06:05,130] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.203 seconds
+[2021-10-21 19:06:35,247] {scheduler_job.py:182} INFO - Started process (PID=91) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:06:35,248] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:06:35,248] {logging_mixin.py:104} INFO - [2021-10-21 19:06:35,248] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:06:35,330] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:06:35,337] {logging_mixin.py:104} INFO - [2021-10-21 19:06:35,337] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:06:35,346] {logging_mixin.py:104} INFO - [2021-10-21 19:06:35,346] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:06:35,353] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.109 seconds
+[2021-10-21 19:07:05,447] {scheduler_job.py:182} INFO - Started process (PID=94) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:07:05,448] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:07:05,449] {logging_mixin.py:104} INFO - [2021-10-21 19:07:05,449] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:07:05,547] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:07:05,556] {logging_mixin.py:104} INFO - [2021-10-21 19:07:05,556] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:07:05,568] {logging_mixin.py:104} INFO - [2021-10-21 19:07:05,567] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:07:05,576] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.131 seconds
+[2021-10-21 19:07:35,660] {scheduler_job.py:182} INFO - Started process (PID=97) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:07:35,661] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:07:35,662] {logging_mixin.py:104} INFO - [2021-10-21 19:07:35,662] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:07:35,760] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:07:35,771] {logging_mixin.py:104} INFO - [2021-10-21 19:07:35,771] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:07:35,786] {logging_mixin.py:104} INFO - [2021-10-21 19:07:35,786] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:07:35,800] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.142 seconds
+[2021-10-21 19:08:05,880] {scheduler_job.py:182} INFO - Started process (PID=100) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:08:05,881] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:08:05,882] {logging_mixin.py:104} INFO - [2021-10-21 19:08:05,882] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:08:05,970] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:08:05,977] {logging_mixin.py:104} INFO - [2021-10-21 19:08:05,976] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:08:05,988] {logging_mixin.py:104} INFO - [2021-10-21 19:08:05,988] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:08:05,996] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.120 seconds
+[2021-10-21 19:08:36,071] {scheduler_job.py:182} INFO - Started process (PID=103) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:08:36,072] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:08:36,072] {logging_mixin.py:104} INFO - [2021-10-21 19:08:36,072] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:08:36,155] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:08:36,163] {logging_mixin.py:104} INFO - [2021-10-21 19:08:36,163] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:08:36,174] {logging_mixin.py:104} INFO - [2021-10-21 19:08:36,174] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:08:36,182] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.113 seconds
+[2021-10-21 19:09:06,256] {scheduler_job.py:182} INFO - Started process (PID=106) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:09:06,257] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:09:06,257] {logging_mixin.py:104} INFO - [2021-10-21 19:09:06,257] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:09:06,338] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:09:06,347] {logging_mixin.py:104} INFO - [2021-10-21 19:09:06,347] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:09:06,359] {logging_mixin.py:104} INFO - [2021-10-21 19:09:06,359] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:09:06,366] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.111 seconds
+[2021-10-21 19:09:36,451] {scheduler_job.py:182} INFO - Started process (PID=109) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:09:36,451] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:09:36,452] {logging_mixin.py:104} INFO - [2021-10-21 19:09:36,452] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:09:36,534] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:09:36,541] {logging_mixin.py:104} INFO - [2021-10-21 19:09:36,541] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:09:36,551] {logging_mixin.py:104} INFO - [2021-10-21 19:09:36,551] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:09:36,558] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.109 seconds
+[2021-10-21 19:10:06,637] {scheduler_job.py:182} INFO - Started process (PID=112) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:10:06,637] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:10:06,638] {logging_mixin.py:104} INFO - [2021-10-21 19:10:06,638] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:10:06,727] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:10:06,734] {logging_mixin.py:104} INFO - [2021-10-21 19:10:06,733] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:10:06,743] {logging_mixin.py:104} INFO - [2021-10-21 19:10:06,743] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:10:06,750] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.116 seconds
+[2021-10-21 19:10:36,832] {scheduler_job.py:182} INFO - Started process (PID=115) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:10:36,833] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:10:36,833] {logging_mixin.py:104} INFO - [2021-10-21 19:10:36,833] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:10:36,915] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:10:36,922] {logging_mixin.py:104} INFO - [2021-10-21 19:10:36,921] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:10:36,931] {logging_mixin.py:104} INFO - [2021-10-21 19:10:36,931] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:10:36,937] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.109 seconds
+[2021-10-21 19:11:07,034] {scheduler_job.py:182} INFO - Started process (PID=118) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:11:07,035] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:11:07,036] {logging_mixin.py:104} INFO - [2021-10-21 19:11:07,036] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:11:07,119] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:11:07,127] {logging_mixin.py:104} INFO - [2021-10-21 19:11:07,127] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:11:07,137] {logging_mixin.py:104} INFO - [2021-10-21 19:11:07,137] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:11:07,145] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.114 seconds
+[2021-10-21 19:11:37,222] {scheduler_job.py:182} INFO - Started process (PID=121) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:11:37,223] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:11:37,223] {logging_mixin.py:104} INFO - [2021-10-21 19:11:37,223] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:11:37,308] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:11:37,317] {logging_mixin.py:104} INFO - [2021-10-21 19:11:37,317] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:11:37,329] {logging_mixin.py:104} INFO - [2021-10-21 19:11:37,329] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:11:37,337] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.117 seconds
+[2021-10-21 19:12:07,408] {scheduler_job.py:182} INFO - Started process (PID=124) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:12:07,409] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:12:07,410] {logging_mixin.py:104} INFO - [2021-10-21 19:12:07,410] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:12:07,499] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:12:07,507] {logging_mixin.py:104} INFO - [2021-10-21 19:12:07,507] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:12:07,518] {logging_mixin.py:104} INFO - [2021-10-21 19:12:07,517] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:12:07,526] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.120 seconds
+[2021-10-21 19:12:37,610] {scheduler_job.py:182} INFO - Started process (PID=127) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:12:37,611] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:12:37,611] {logging_mixin.py:104} INFO - [2021-10-21 19:12:37,611] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:12:37,693] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:12:37,700] {logging_mixin.py:104} INFO - [2021-10-21 19:12:37,700] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:12:37,711] {logging_mixin.py:104} INFO - [2021-10-21 19:12:37,711] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:12:37,720] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.113 seconds
+[2021-10-21 19:13:07,807] {scheduler_job.py:182} INFO - Started process (PID=130) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:13:07,808] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:13:07,808] {logging_mixin.py:104} INFO - [2021-10-21 19:13:07,808] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:13:07,907] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:13:07,919] {logging_mixin.py:104} INFO - [2021-10-21 19:13:07,919] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:13:07,934] {logging_mixin.py:104} INFO - [2021-10-21 19:13:07,934] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:13:07,943] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.139 seconds
+[2021-10-21 19:13:38,021] {scheduler_job.py:182} INFO - Started process (PID=133) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:13:38,022] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:13:38,023] {logging_mixin.py:104} INFO - [2021-10-21 19:13:38,023] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:13:38,108] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:13:38,115] {logging_mixin.py:104} INFO - [2021-10-21 19:13:38,115] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:13:38,125] {logging_mixin.py:104} INFO - [2021-10-21 19:13:38,125] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:13:38,132] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.115 seconds
+[2021-10-21 19:14:08,201] {scheduler_job.py:182} INFO - Started process (PID=136) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:14:08,202] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:14:08,203] {logging_mixin.py:104} INFO - [2021-10-21 19:14:08,203] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:14:08,288] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:14:08,298] {logging_mixin.py:104} INFO - [2021-10-21 19:14:08,298] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:14:08,308] {logging_mixin.py:104} INFO - [2021-10-21 19:14:08,308] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:14:08,328] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.129 seconds
+[2021-10-21 19:14:38,415] {scheduler_job.py:182} INFO - Started process (PID=139) to work on /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:14:38,415] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/fire_incidents_sf.py for tasks to queue
+[2021-10-21 19:14:38,416] {logging_mixin.py:104} INFO - [2021-10-21 19:14:38,416] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:14:38,505] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Fire_Incidents']) retrieved from /opt/airflow/dags/fire_incidents_sf.py
+[2021-10-21 19:14:38,513] {logging_mixin.py:104} INFO - [2021-10-21 19:14:38,513] {dag.py:1824} INFO - Sync 1 DAGs
+[2021-10-21 19:14:38,524] {logging_mixin.py:104} INFO - [2021-10-21 19:14:38,524] {dag.py:2280} INFO - Setting next_dagrun for Fire_Incidents to 2021-10-21 00:00:00+00:00
+[2021-10-21 19:14:38,531] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/fire_incidents_sf.py took 0.119 seconds
