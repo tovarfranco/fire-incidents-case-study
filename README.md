@@ -259,7 +259,7 @@ This folder will have the refined data in parquet
     
 5. You will see both Dags live, and able to be triggered. 
 
-<img src="images/airflow.png" width="700">
+<img src="images/Airflow.png" width="700">
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
