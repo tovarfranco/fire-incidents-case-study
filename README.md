@@ -182,11 +182,11 @@ Possibles troubleshoots when setting Redshift Cluster and Glue:
 Buckets: 
 
 
-<img src="images/Buckets.jpeg" width="700">
+<img src="images/Buckets.png" width="700">
 
 Bucket: 	fire-incidents-config-dev
 
-<img src="images/Bucket_config.jpeg" width="700">
+<img src="images/Bucket_config.png" width="700">
 
 <ul>
    <li> config: will contain the neccesary yaml configurations for the jobs
@@ -199,21 +199,15 @@ Bucket: 	fire-incidents-config-dev
 
 Bucket:  fire-incidents-raw-dev
 
-<img src="images/Bucket_raw.jpeg" width="700">
+<img src="images/Bucket_raw.png" width="700">
 
 This folder will have the csv file.
 
 Bucket:  fire-incidents-refined-dev
 
-<img src="images/Bucket_refined.jpeg" width="700">
+<img src="images/Bucket_refined.png" width="700">
 
 This folder will have the refined data in parquet
-
-
-
-
-
-
 
 
 ## License
