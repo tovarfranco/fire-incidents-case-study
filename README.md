@@ -160,14 +160,14 @@ Setting up cluster: <a href=https://docs.aws.amazon.com/redshift/latest/gsg/rs-g
 
 ## Troubleshooting
 
-Possibles troubleshoots whe setting Redshift Cluster and Glue:
-
+Possibles troubleshoots when setting Redshift Cluster and Glue:
 
 <ul>
    <li> Nat Gateway activation: <a href=https://aws.amazon.com/es/premiumsupport/knowledge-center/glue-s3-endpoint-validation-failed/> AWS Docs </a>
-   <li> Routing Tables updated:
-   <li> Attached the role deployed to the cluster:
-   <li> Create a Catalog Connection from Glue. 
+   <li> Routing Tables updated: <a href=https://aws.amazon.com/es/premiumsupport/knowledge-center/glue-s3-endpoint-validation-failed/> AWS Docs </a>
+   <li> Attached the role deployed to the cluster: <a href=https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum-add-role.html> AWS Docs </a>
+   <li> Create a Catalog Connection from Glue: <a href=https://docs.aws.amazon.com/glue/latest/dg/console-connections.html> AWS Docs </a>
+   <li> Attach the connection to the GLue Job: <a href=https://aws.amazon.com/es/premiumsupport/knowledge-center/connection-timeout-glue-redshift-rds/> AWS Docs </a>
 </ul>
 
 
