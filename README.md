@@ -30,7 +30,7 @@ There are differents stages in the datalake: <br>
 
 # Fire Incidents Library
 
-This library contains all the common code used by the Rooster Music team.
+This library contains all the common code used by the Fire Incidents team.
 
 ## How to contribute
 
@@ -89,6 +89,7 @@ You should branch from **dev**, and your branch name should follow this rule **<
    > Note: You will specify the reviewers that will approve this merge.
 
 
+# Get Started
 
 
 
