@@ -136,8 +136,9 @@ CREATE TABLE prev.fire_incidents(
 
 CREATE TABLE dwh.fact_fire_incidents(
   id int, 
-  sk_district varchar(10000),
-  sk_battalion varchar(10000),
+  sk_district bigint,
+  sk_battalion bigint,
+  sk_date bigint,
   incident_number int, 
   exposure_number int, 
   address varchar(10000), 

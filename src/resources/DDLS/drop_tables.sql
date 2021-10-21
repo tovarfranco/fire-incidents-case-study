@@ -9,3 +9,5 @@ drop table stg.fire_incidents;
 drop table prev.battalion;
 drop table prev.district;
 drop table prev.fire_incidents;
+
+drop table dwh.dim_date;

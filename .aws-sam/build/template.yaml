@@ -233,6 +233,46 @@ Resources:
           Ref: Stage
         project:
           Ref: ProjectName
+  PipelineDimDate:
+    Type: AWS::Glue::Job
+    Properties:
+      Connections:
+        Connections:
+        - redshift-connection
+      Name:
+        Fn::Sub: ${ProjectName}-dim-date-${Stage}
+      ExecutionProperty:
+        MaxConcurrentRuns: 3
+      WorkerType: G.1X
+      NumberOfWorkers: 3
+      GlueVersion: '3.0'
+      Timeout: 2880
+      Command:
+        Name: glueetl
+        PythonVersion: '3'
+        ScriptLocation: ../../src/dim_date.py
+      DefaultArguments:
+        --extra-py-files:
+          Fn::Sub: s3://${BucketNameConfig}/lib/${WheelName}-1.0-py3-none-any.whl
+        --enable-metrics: ''
+        --enable-spark-ui: 'true'
+        --spark-event-logs-path:
+          Fn::Sub: s3://${BucketNameConfig}/logs/spark
+        --enable-s3-parquet-optimized-committer: 'true'
+        --user-jars-first: 'true'
+        --enable-glue-datacatalog: ''
+      Description: Template Spark job
+      Role:
+        Fn::GetAtt:
+        - PipelineRole
+        - Arn
+      Tags:
+        version:
+          Ref: Version
+        stage:
+          Ref: Stage
+        project:
+          Ref: ProjectName
   GlueAnalyticsDatabaseRaw:
     Type: AWS::Glue::Database
     Properties:

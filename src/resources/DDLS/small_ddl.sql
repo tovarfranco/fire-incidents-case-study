@@ -43,3 +43,16 @@ CREATE TABLE dwh.dim_district(
 );
 
 
+CREATE TABLE dwh.dim_date(
+  sk_date bigint identity(1, 1),
+  date timestamp,
+  year int,
+  month int,
+  quarter int,
+  d_o_w varchar(100),
+  d_o_m varchar(1000),
+  d_o_y varchar(1000)
+);
+
+
+
