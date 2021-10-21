@@ -36,8 +36,8 @@ The table battalion will have the fields: ['battalion', 'station_area'] + id_bat
 The table district will have the fields: ['neighborhood_district', 'city', 'zipcode'] + id_district (generated with md5 to identify an unique record)<br>
 The table fire_incidents will have all the fields plus id_district and id_battalion. This will be usefull to obtain the SK from the datawarehouse dimensions when creating a fact table.
 The prev tables are temporal tables, which will be truncated and written to the schema "stg" using upserts/merge methods. The tables in "stg" will be updated daily and will have all the history. While the schema "prev" will have the data of the day (the incremental load). The tables in "stg" will have the same structure as in "prev". <br>
-Once in "stg", another glue job will create the dimensions and the fact table. 
-This, will create the dimensions: dim_district, dim_battalion, copying the tables from "stg" and adding them the SK, which are from the datawarehouse. 
+Once in "stg", another glue job will create the dimensions and the fact table in "dwh". Setting the transformation outside Redshift (using Glue) will help us not to overload the datawarehouse, and avoid us of using stored procedures. 
+This Glue Job, will create the dimensions: dim_district, dim_battalion, copying the tables from "stg" to "dwh" and adding them the SK (autoincremental), which are from the datawarehouse. 
 Once the dims are created in "dwh", the job will create a fact table named: fact_fire_incidents, consuming fire_incidents from "stg" and joining it to the dimension to obtain the sk_district, and sk_battalion.<br>
 Once finished the proccess, the data will be available in "dwh" to be consumed. 
 
