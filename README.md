@@ -23,41 +23,12 @@ There are differents stages in the datalake: <br>
 
 <ul>
    <li> Raw: Where the .csv file is uploaded everyday. It has the raw data coming from differents sources.
-   <li> Refined: Where the information is clean and partition in parquet format. It is partition by year:month,day
-   <li> Redshift: 
+   <li> Refined: Where the information is clean and partitioned by year, month, day. Stored in parquet format
+   <li> Redshift: where coexists 3 schemas. prev, stg and dwh
 </ul>
 
 
-## The team
-
-<p> <img src="images/Alan.jpeg" width="100" align = "left"> </p>
-<p>My name is Alan Tovar and I am 28 years old. I live in Quilmes, Buenos Aires, Argentina. I have more than 4 years in IT industry and nowdays I work as a back-end developer in Hexacta Software Factory. I study Electronic Engineer. I have played the drums for about 10 years and also passionate for the bass.</p> 
-<br>
-
-<p> <img src="images/Franco.jpeg" width="100" align = "left"> </p>
-<p>I am Franco Tovar and I am 25 years old. I am from Entre Rios, Argentina but nowdays I live in Quilmes, Buenos Aires, Argentina. I work as a Data Engineer in Hexacta Software Factory and study Electronic Engineer. I love playing the guitar, the piano and also singing. </p> 
-<br>
-
-<p> <img src="images/Nazareno.jpeg" width="100" align = "left"> </p>
-<p>I am Cristan Nazareno Agüero and I am 18 years old. I am studying Full Stack Development. I love programming, playing football and video games. I live in Mar del Plata, Buenos Aires, Argentina. </p> 
-<br>
-
-## References
-
-- https://www.greymusic.com.ar/
-- https://www.baires.rocks/
-- https://bairesmusic.mercadoshops.com.ar/
-- https://www.blackmusic.com.ar/
-- https://www.mercadolibre.com.ar/
-
-We choose Gray Music and Baires Rocks webpages because of their implementation of formats and styles. These two pages have a high reputation in the industry of Music, so we found interesting to take a look at them.
-We select Black Music and Mercado Libre due to their paid methods and user experience when looking for differents products. We believe we can adapt our page and offer a similar experience.
-
-## Jira Board
-
-https://rooster-music.atlassian.net/jira/software/projects/RM/boards/1/backlog
-
-# Rooster Music Library
+# Fire Incidents Library
 
 This library contains all the common code used by the Rooster Music team.
 
@@ -80,7 +51,7 @@ You should branch from **dev**, and your branch name should follow this rule **<
 
 1. Clone the Repository
    ```bash
-   git clone https://github.com/tovarfranco/grupo-12-RoosterMusic.git
+   git clone https://github.com/tovarfranco/fire-incidents-case-study.git
    ```
    > Note: You can obtain the url from Code.
 2. Check the branch you are positioned:
@@ -116,6 +87,9 @@ You should branch from **dev**, and your branch name should follow this rule **<
 
 9. After you finish your feature you must submit a merge request pointing to **dev** branch:
    > Note: You will specify the reviewers that will approve this merge.
+
+
+
 
 
 ## License
