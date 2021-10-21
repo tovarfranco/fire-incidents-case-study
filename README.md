@@ -28,11 +28,18 @@ There are differents stages in the datalake: <br>
 </ul>
 
 
-The raw data will be uploaded to the raw bucket named: fire-incidents-raw-dev.
-A glue job, named fire-incidents-raw-refined-dev will read the .csv using PySpark, and write it partitioned by year,month,day in the bucket named 	fire-incidents-refined-dev with parquet format.
+The raw data will be uploaded to the raw bucket named: fire-incidents-raw-dev.<br>
+A glue job, named fire-incidents-raw-refined-dev will read the .csv using PySpark, and write it partitioned by year,month,day in the bucket named 	fire-incidents-refined-dev with parquet format.<br>
 The data in raw and refined stages, will be crawled and available in Athena, where Data Quality proccesses will be able to analyze and compare the data, in order not to miss records during the process.
-Once in refined, the data will be loaded to Redshift, using a "prev" schema, where the tables: fire_incidents, district and battalion will be written. 
-The prev tables are temporal tables, which will be truncated and written to the schema stg using upserts/merge methods. The tables in "stg" will be updated daily.
+Once in refined, the data will be loaded to Redshift, using a "prev" schema, where the tables: fire_incidents, district and battalion will be written. <br>
+The table battalion will have the fields: ['battalion', 'station_area'] + id_battalion (generated with md5 to identify an unique record).<br>
+The table district will have the fields: ['neighborhood_district', 'city', 'zipcode'] + id_district (generated with md5 to identify an unique record)<br>
+The table fire_incidents will have all the fields plus id_district and id_battalion. This will be usefull to obtain the SK from the datawarehouse dimensions when creating a fact table.
+The prev tables are temporal tables, which will be truncated and written to the schema "stg" using upserts/merge methods. The tables in "stg" will be updated daily and will have all the history. While the schema "prev" will have the data of the day (the incremental load). The tables in "stg" will have the same structure as in "prev". <br>
+Once in "stg", another glue job will create the dimensions and the fact table. 
+This, will create the dimensions: dim_district, dim_battalion, copying the tables from "stg" and adding them the SK, which are from the datawarehouse. 
+Once the dims are created in "dwh", the job will create a fact table named: fact_fire_incidents, consuming fire_incidents from "stg" and joining it to the dimension to obtain the sk_district, and sk_battalion.<br>
+Once finished the proccess, the data will be available in "dwh" to be consumed. 
 
 
 # Fire Incidents Library
