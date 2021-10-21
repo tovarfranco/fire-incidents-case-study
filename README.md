@@ -1,8 +1,12 @@
 # Fire Incidents Analysis
 
+## About Fire Incidents Dataset
+
+Fire Incidents includes a summary of each (non-medical) incident to which the SF Fire Department responded. Each incident record includes the call number, incident number, address, number and type of each unit responding, call type (as determined by dispatch), prime situation (field observation), actions taken, and property loss.
+
 <img src="images/Logo.JPG" width="400">
 
-## About us
+<a> href="https://data.sfgov.org/Public-Safety/Fire-Incidents/wr8u-xric"> Link </a>
 
 We are a digital company from Argentina hosted in US and focused on changing the experience when looking for new music equipments to buy.
 <br>Our objetive is to provide our clients with the best musical products and the most comfortable and trusted paid methods of the industry.
