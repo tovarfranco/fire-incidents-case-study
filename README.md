@@ -19,12 +19,14 @@ The arquitecture developed is the following:
 <img src="images/arch.jpeg" width="700">
 
 
-We are a digital company from Argentina hosted in US and focused on changing the experience when looking for new music equipments to buy.
-<br>Our objetive is to provide our clients with the best musical products and the most comfortable and trusted paid methods of the industry.
-<br>You are able to surf inside our free application and find the equipment you were looking for. We have amount of variety in terms of quality and price. 
-<br>Every week, we have lot of promotions and recommended articles for you.
-Once you are in, you will never look back.
-We hope you enjoy this experience.
+There are differents stages in the datalake: <br>
+
+<ul>
+   <li> Raw: Where the .csv file is uploaded everyday. It has the raw data coming from differents sources.
+   <li> Refined: Where the information is clean and partition in parquet format. It is partition by year:month,day
+   <li> Redshift: 
+</ul>
+
 
 ## The team
 
