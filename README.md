@@ -12,6 +12,10 @@ The dataset url is:
 
 ##  Data Arquitecture
 
+The Data team, needs dimensional tables based on the information provided from a .csv file which is updated daily.
+The solution proposed, is developed in AWS, using their different servieces.
+The arquitecture developed is the following:
+
 <img src="images/arch.jpeg" width="700">
 
 
