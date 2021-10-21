@@ -2,3 +2,6 @@ venv1
 credentials.txt
 instructions.txt
 .aws-sam
+build
+dist
+fire_incidents.egg-info

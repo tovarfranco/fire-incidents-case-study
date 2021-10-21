@@ -15,3 +15,14 @@ LEFT JOIN dwh.dim_district district
 GROUP BY District
 
 
+3) Number of incidents that each Battalion assisted
+
+SELECT bat.battalion, bat.sation_area, count(fire.id) as AmountIncidents
+FROM dwh.fact_fire_incidents fire 
+LEFT JOIN dwh.dim_battalion bat 
+    ON fire.sk_battalion = bat.sk_battalion  
+GROUP BY bat.battalion, bat.sation_area
+
+
+
+

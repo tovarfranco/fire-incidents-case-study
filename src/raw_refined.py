@@ -11,22 +11,29 @@ from pyspark.sql.functions import date_format, lit, to_timestamp
 
 def main(spark, partitions_n, logger):
     
+    logger.info("--------------Reading Config yaml file from s3")
     config_file = 's3://fire-incidents-config-dev/config/raw_refined.yaml'
     config = load_yaml(config_file)
     
     if config['source'] == 'csv':
         client = SourceSpark(config['csv']['path'],spark,logger)
         df_incidents = client.read_csv()
+        # print(df_fire_incidents.printSchema())
+
+        logger.info("--------------Adding Partition Column")
         df_partitioned = add_partition_cols(partition_date=config['csv']['partition_date'], df=df_incidents)
-        # df_partitioned = add_partition_cols(partition_date=config['csv']['partition_date'], df=df_incidents)
-        # df_partitioned = df_partitioned.toDF(*[c.replace(" ", "_").lower() for c in df_partitioned.columns])
+        # print(df_fire_incidents.printSchema())
+
+        logger.info("--------------Fixing formats issues")
         df_fire_incidents = transform_columns(df_partitioned)
-        print(df_fire_incidents.printSchema())
+        # print(df_fire_incidents.printSchema())
+        
+        logger.info("--------------Writing data to Refined Bucket")
 
         bulk_data = SparkBulkData(logger,df_fire_incidents,spark,config)
         bulk_data.to_s3()   
         
-        logger.info("Process Finished")
+        logger.info("-------Process Finished")
     # elif config['source'] == 'api':
     #     url = config['api']['url']
     #     user = config['api']['user']
@@ -34,7 +41,7 @@ def main(spark, partitions_n, logger):
     #     client = SourceApi(url,user,password)
     #     df_incidents = client.read()
     else:
-        logger.warning("Provide a source location")
+        logger.warning("-------Provide a source location")
         
     
 

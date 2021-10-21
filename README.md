@@ -179,6 +179,40 @@ Possibles troubleshoots when setting Redshift Cluster and Glue:
 
 # S3 Folder structures:
 
+Buckets: 
+
+
+<img src="images/Buckets.jpeg" width="700">
+
+Bucket: 	fire-incidents-config-dev
+
+<img src="images/Bucket_config.jpeg" width="700">
+
+<ul>
+   <li> config: will contain the neccesary yaml configurations for the jobs
+   <li> lib: will contain the generated wheel for the jobs
+   <li> sam_templates: will containt the deployed templates from sam
+   <li> athena_results: will be used to stored the athena queries
+   <li> spark_logs: will contain the spark history logs of the jobs
+   <li> redshift: will contain temporal files when write to redshift cluster
+</ul>
+
+Bucket:  fire-incidents-raw-dev
+
+<img src="images/Bucket_raw.jpeg" width="700">
+
+This folder will have the csv file.
+
+Bucket:  fire-incidents-refined-dev
+
+<img src="images/Bucket_refined.jpeg" width="700">
+
+This folder will have the refined data in parquet
+
+
+
+
+
 
 
 

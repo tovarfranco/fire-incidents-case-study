@@ -13,11 +13,15 @@ from pyspark.sql.functions import sequence, to_date, explode, col, year, month, 
 
 
 def main(spark,glueContext,logger):
-    
+
+    logger.info("--------------Reading Config yaml file from s3")
+
     config_file = 's3://fire-incidents-config-dev/config/stg_dwh.yaml'
     config = load_yaml(config_file)
     df = spark.createDataFrame([(1,)], ["id"])
     
+    logger.info("--------------Generating Calendar")
+
     df = df.withColumn(
         "date", 
         F.explode(F.expr("sequence(to_date('2002-01-01'), to_date('2021-12-31'), interval 1 day)"))
@@ -45,6 +49,8 @@ def main(spark,glueContext,logger):
             "aws_iam_role": AWS_IAM_ROLE
         }
         # WRITE TO REDSHIFT
+        logger.info(f"--------------Writing table: {DBTABLE_TARGET} to database: {DATABASE}")
+
         glueContext.write_dynamic_frame.from_jdbc_conf(
             frame = DynamicFrame.fromDF(df, glueContext, "redshift"),
             catalog_connection = 'redshift-connection',
