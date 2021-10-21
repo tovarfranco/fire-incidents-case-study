@@ -6,7 +6,8 @@ Fire Incidents includes a summary of each (non-medical) incident to which the SF
 
 <img src="images/Logo.JPG" width="400">
 
-<a> href="https://data.sfgov.org/Public-Safety/Fire-Incidents/wr8u-xric"> Link </a>
+The dataset url is:
+<a href="https://data.sfgov.org/Public-Safety/Fire-Incidents/wr8u-xric"> Link </a>
 
 We are a digital company from Argentina hosted in US and focused on changing the experience when looking for new music equipments to buy.
 <br>Our objetive is to provide our clients with the best musical products and the most comfortable and trusted paid methods of the industry.
