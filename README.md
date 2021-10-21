@@ -117,12 +117,17 @@ Steps:
    aws configure
    ```
    > Note: You will need to install AWS CLI before.
-4. For a new feature/bug/fix/refactor, you'll create a branch:
+4. You will need to configure the access token and provide your MFA code.
    ```bash
-   git checkout -b <type>/<branch_name>
+   sudo cp ~/.aws/credentials ~/.aws/credentials_back
+   python incidents_token.py
    ```
-   > Note: Replace <type> and <branch_name> for your actual information. i.e: feat/frontend
-5. Work on your changes.
+   > Note: You will need MFA in your AWS account activated before. 
+5. Install the AWS Infrastructure and create the wheel for your project
+   ```bash
+   ./start.sh
+   ```
+   > Note: You will need SAM cli. 
 6. Add your changes:
    ```bash
    git add --all
