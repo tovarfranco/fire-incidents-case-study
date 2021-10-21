@@ -1,0 +1,12 @@
+source: csv
+
+csv:
+  path: s3://fire-incidents-raw-dev/fire_incidents/fire_incidents.csv
+  partition_date: Incident Date
+  partitions: ['year','month','day']
+  s3_path: s3://fire-incidents-refined-dev/fire_incidents
+
+api:
+  url: https://data.sfgov.org/resource/wr8u-xric.json
+  user: qk17usuwcm5cwnns12ochy1k
+  password: 4fba91ry8usx3kgpb2n0uekj3kixl7lzz227khuzrfb9b79xlo

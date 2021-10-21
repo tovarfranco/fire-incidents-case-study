@@ -1,0 +1,35 @@
+{
+    "StartAt": "Raw-Refined",
+    "States": {
+      "Raw-Refined": {
+        "Type": "Task",
+        "Resource": "arn:aws:states:::glue:startJobRun.sync",
+        "Parameters": {
+          "JobName": "${RawRefined}",
+          "WorkerType": "G.1X",
+          "NumberOfWorkers": 3
+        },
+        "Next": "Refined-Stg"
+      },
+      "Refined-Stg": {
+        "Type": "Task",
+        "Resource": "arn:aws:states:::glue:startJobRun.sync",
+        "Parameters": {
+          "JobName": "${RefinedStg}",
+          "WorkerType": "G.1X",
+          "NumberOfWorkers": 3
+        },
+        "Next": "Stg-DWH"
+      },
+      "Stg-DWH": {
+        "Type": "Task",
+        "Resource": "arn:aws:states:::glue:startJobRun.sync",
+        "Parameters": {
+          "JobName": "${StgDwh}",
+          "WorkerType": "G.1X",
+          "NumberOfWorkers": 3
+        },
+        "End": true
+      }
+    }
+  }

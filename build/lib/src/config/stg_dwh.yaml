@@ -1,0 +1,33 @@
+source: redshift
+
+redshift:
+  database: dev
+  schema_prev: prev
+  schema: stg
+  role: arn:aws:iam::104674085951:role/fire-incidents-role-dev
+  endpoint: jdbc:redshift://redshift-cluster-1.cxdchl0msgww.us-west-2.redshift.amazonaws.com:5439/dev
+
+dim:
+  - source: stg.battalion
+    target: dwh.dim_battalion
+  - source: stg.district
+    target: dwh.dim_district
+
+fact:
+  sources:
+    - name: dwh.dim_battalion
+      view: dim_battalion
+    - name: dwh.dim_district
+      view: dim_district
+    - name: stg.fire_incidents
+      view: fire_incidents
+  query: >
+    SELECT fire.*,bat.sk_battalion, dis.sk_district
+    FROM fire_incidents fire
+    LEFT JOIN dim_battalion bat
+      ON fire.id_battalion = bat.id_battalion
+    LEFT JOIN dim_district dis
+      ON fire.id_district = dis.id_district
+  target: dwh.fact_fire_incidents
+  include_cols:
+  exclude_cols: ['id_battalion','id_district']
