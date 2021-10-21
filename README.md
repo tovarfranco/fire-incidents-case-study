@@ -179,8 +179,58 @@ Possibles troubleshoots when setting Redshift Cluster and Glue:
 
 # S3 Folder structures:
 
+Buckets: 
 
 
+<img src="images/Buckets.png" width="700">
+
+Bucket: 	fire-incidents-config-dev
+
+<img src="images/Bucket_config.png" width="700">
+
+<ul>
+   <li> config: will contain the neccesary yaml configurations for the jobs
+   <li> lib: will contain the generated wheel for the jobs
+   <li> sam_templates: will containt the deployed templates from sam
+   <li> athena_results: will be used to stored the athena queries
+   <li> spark_logs: will contain the spark history logs of the jobs
+   <li> redshift: will contain temporal files when write to redshift cluster
+</ul>
+
+Bucket:  fire-incidents-raw-dev
+
+<img src="images/Bucket_raw.png" width="700">
+
+This folder will have the csv file.
+
+Bucket:  fire-incidents-refined-dev
+
+<img src="images/Bucket_refined.png" width="700">
+
+This folder will have the refined data in parquet
+
+
+# Spark History Logs
+
+1) Download the image
+
+docker build -t glue/sparkui:latest . 
+
+2) Export Credentials
+
+export AWS_ACCESS_KEY_ID="???"
+export AWS_SECRET_ACCESS_KEY="???"
+export AWS_SESSION_TOKEN="???"
+
+3) Run the spark host 
+
+docker run -it -e SPARK_HISTORY_OPTS="$SPARK_HISTORY_OPTS \
+-Dspark.history.fs.logDirectory=s3a://fire-incidents-config-dev/logs/spark \
+-Dspark.hadoop.fs.s3a.access.key=$AWS_ACCESS_KEY_ID
+-Dspark.hadoop.fs.s3a.secret.key=$AWS_SECRET_ACCESS_KEY \
+-Dspark.hadoop.fs.s3a.session.token=$AWS_SESSION_TOKEN \
+-Dspark.hadoop.fs.s3a.aws.credentials.provider=org.apache.hadoop.fs.s3a.TemporaryAWSCredentialsProvider" \
+-p 18080:18080 --name glue_sparkUI glue/sparkui:latest "/opt/spark/bin/spark-class org.apache.spark.deploy.history.HistoryServer"
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

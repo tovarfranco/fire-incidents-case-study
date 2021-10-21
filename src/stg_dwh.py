@@ -14,6 +14,7 @@ from src.common.spark.extractor.source import SourceSpark
 
 def main(spark,glueContext,logger):
     
+    logger.info("--------------Reading Config yaml file from s3")
     config_file = 's3://fire-incidents-config-dev/config/stg_dwh.yaml'
     config = load_yaml(config_file)
 
@@ -21,6 +22,8 @@ def main(spark,glueContext,logger):
         AWS_IAM_ROLE = config['redshift']['role']
         DATABASE = config['redshift']['database']
         
+        logger.info("--------------Creating Dimension tables")
+
         for dim in config['dim']:
             
             my_conn_options = {
@@ -35,7 +38,7 @@ def main(spark,glueContext,logger):
             dyf = glueContext.create_dynamic_frame_from_options("redshift", my_conn_options)
             df = dyf.toDF()
                         
-            print(df.printSchema())
+            # print(df.printSchema())
             
             DBTABLE_TARGET = dim['target']
             
@@ -45,6 +48,8 @@ def main(spark,glueContext,logger):
                 "aws_iam_role": AWS_IAM_ROLE
             }
             # WRITE TO REDSHIFT
+            logger.info(f"--------------Writing dim: {DBTABLE_TARGET} to database: {DATABASE}")
+
             glueContext.write_dynamic_frame.from_jdbc_conf(
                 frame = DynamicFrame.fromDF(df, glueContext, "redshift"),
                 catalog_connection = 'redshift-connection',
@@ -52,6 +57,7 @@ def main(spark,glueContext,logger):
                 redshift_tmp_dir = f"s3://fire-incidents-config-dev/redshift/temp/{DBTABLE_TARGET}"
             )           
 
+        logger.info("--------------Creating Fact Table")
 
         fact_config = config['fact']
         for source in fact_config['sources']:
@@ -86,6 +92,8 @@ def main(spark,glueContext,logger):
             "aws_iam_role": AWS_IAM_ROLE
         }
         # WRITE TO REDSHIFT
+        logger.info(f"--------------Writing table: {DBTABLE_TARGET} to database: {DATABASE}")
+
         glueContext.write_dynamic_frame.from_jdbc_conf(
             frame = DynamicFrame.fromDF(df, glueContext, "redshift"),
             catalog_connection = 'redshift-connection',
