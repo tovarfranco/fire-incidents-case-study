@@ -157,7 +157,22 @@ Steps:
 
 Useful links:
 Setting up cluster: <a href=https://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-launch-sample-cluster.html> AWS Docs </a> <br>
-# Neccesary Buckets
+
+## Troubleshooting
+
+Possibles troubleshoots whe setting Redshift Cluster and Glue:
+
+
+<ul>
+   <li> Nat Gateway activation: <a href=https://aws.amazon.com/es/premiumsupport/knowledge-center/glue-s3-endpoint-validation-failed/> AWS Docs </a>
+   <li> Routing Tables updated:
+   <li> Attached the role deployed to the cluster:
+   <li> Create a Catalog Connection from Glue. 
+</ul>
+
+
+# S3 Folder structures:
+
 
 
 
