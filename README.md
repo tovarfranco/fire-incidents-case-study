@@ -30,7 +30,7 @@ There are differents stages in the datalake: <br>
 
 The raw data will be uploaded to the raw bucket named: fire-incidents-raw-dev.<br>
 A glue job, named fire-incidents-raw-refined-dev will read the .csv using PySpark, and write it partitioned by year,month,day in the bucket named 	fire-incidents-refined-dev with parquet format.<br>
-The data in raw and refined stages, will be crawled and available in Athena, where Data Quality proccesses will be able to analyze and compare the data, in order not to miss records during the process.
+The data in raw and refined stages, will be crawled and available in Athena, where Data Quality processes will be able to analyze and compare the data, in order not to miss records during the process.<br>
 Once in refined, the data will be loaded to Redshift, using a "prev" schema, where the tables: fire_incidents, district and battalion will be written. <br>
 The table battalion will have the fields: ['battalion', 'station_area'] + id_battalion (generated with md5 to identify an unique record).<br>
 The table district will have the fields: ['neighborhood_district', 'city', 'zipcode'] + id_district (generated with md5 to identify an unique record)<br>
